@@ -36,3 +36,28 @@ code {
 .btn {
   border-radius: 0 !important;
 }
+
+.navbar {
+  position: fixed;
+  top: 10px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-between;
+}
+
+form.buscador input {
+  border: none;
+  background: rgba(0,0,0,0.6);
+}

@@ -1,9 +1,10 @@
 import Layout from "./components/Layout"
+import InicioCarousel from "./components/Carousel/Carousel"
 
 export default function Home() {
   return (
     <Layout>
-      <h1>Esta es una prueba</h1>
+      <InicioCarousel/>
     </Layout>
   )
 }

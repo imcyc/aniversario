@@ -2,7 +2,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
 
 export default function Header(){
     return (
@@ -14,25 +13,25 @@ export default function Header(){
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-                <Nav.Link href="#home">Quiénes Somos</Nav.Link>
-                <Nav.Link href="#features">Cursos</Nav.Link>
-                <Nav.Link href="#pricing">Gerencia Técnica</Nav.Link>
-                <Nav.Link href="#pricing">Historia</Nav.Link>
-                <Nav.Link href="#pricing">Membresías</Nav.Link>
-                <Nav.Link href="#pricing">APPS</Nav.Link>
-                <Nav.Link href="#pricing">Directorio</Nav.Link>
-                <Nav.Link href="#pricing">Tienda</Nav.Link>
-                <Nav.Link href="#pricing">Ubicación</Nav.Link>
-              </Nav>
-            <Form inline>
+              <Nav.Link href="#home">Quiénes Somos</Nav.Link>
+              <Nav.Link href="#features">Cursos</Nav.Link>
+              <Nav.Link href="#pricing">Gerencia Técnica</Nav.Link>
+              <Nav.Link href="#pricing">Historia</Nav.Link>
+              <Nav.Link href="#pricing">Membresías</Nav.Link>
+              <Nav.Link href="#pricing">APPS</Nav.Link>
+              <Nav.Link href="#pricing">Directorio</Nav.Link>
+              <Nav.Link href="#pricing">Tienda</Nav.Link>
+              <Nav.Link href="#pricing">Ubicación</Nav.Link>
+            </Nav>
+            <Form className="buscador" inline>
               <FormControl type="text" placeholder="BUSCAR" className="mr-sm-2" />
-              <Button variant="outline-dark">BUSCAR</Button>
             </Form>
           </Navbar.Collapse>
         </Navbar>
         <style jsx>{`
           .navbar {
             width: 100%;
+            margin-top: 20px;
           }
           .bg-dark {
             background-color: transparent !important;
@@ -53,6 +52,12 @@ export default function Header(){
           }
           .btn {
             font-size: 0.7em !important;
+          }
+          .navbar-collapse {
+            justify-content: space-between;
+          }
+          .navbar-light .navbar-nav .nav-link {
+            color: #fff;
           }
         `}</style>
       </>

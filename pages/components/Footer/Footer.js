@@ -9,6 +9,9 @@ export default function Footer(){
           .Footer {
             width: 100%;
             text-align: center;
+            position: fixed;
+            bottom: 0;
+            z-index: 1000;
           }
           .Footer h2 {
             font-weight: 100;
