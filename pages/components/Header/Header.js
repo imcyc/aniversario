@@ -9,7 +9,7 @@ export default function Header(){
       <>
         <Navbar expand="lg">
           <Navbar.Brand href="#home">
-            <img src="/logo.svg" alt="" title="" />
+            <img src="/logo.svg" alt="" title="" style={{'width':'8em'}} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -30,6 +30,31 @@ export default function Header(){
             </Form>
           </Navbar.Collapse>
         </Navbar>
+        <style jsx>{`
+          .navbar {
+            width: 100%;
+          }
+          .bg-dark {
+            background-color: transparent !important;
+          }
+          .navbar-light .navbar-nav .nav-link {
+            color: #ffffff !important;
+            font-size: 0.6em;
+            transition: all 1s;
+            text-transform: uppercase;
+          }
+          .navbar-light .navbar-nav .nav-link:hover {
+            background: #006380;
+            color: #ffffff !important;
+          }
+          .form-control {
+            font-size: 0.7em !important;
+            background-color: rgba(255,255,255,0.7) !important;
+          }
+          .btn {
+            font-size: 0.7em !important;
+          }
+        `}</style>
       </>
     );
 }
