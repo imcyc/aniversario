@@ -1,23 +1,53 @@
+import { useState } from 'react';
 import ItemsCarousel from 'react-items-carousel';
 
 export default function ItemCarousel() {
+
+  const [ indexer, setIndexer ] = useState(0);
+  const [ activoItemIndex, setActivoItemIndex ] = useState(0);
+  const [ direction, setDirection ] = useState('next');
+  const [ carouselItemCount, setCarouselItemCount ] = useState(4);
+
+  const toggleCarousel = (direction) => {
+    console.log('direccion: ' + direction);
+    
+    const [min, max] = [0, carouselItemCount - 1]
+    if(direction === 'prev'){
+      setActivoItemIndex(activoItemIndex + 1);
+    }
+    if(activoItemIndex > max){
+      setActivoItemIndex(0);
+    }
+    if(activoItemIndex < min){
+      setActivoItemIndex(activoItemIndex - 1);
+    }
+    setDirection(direction);
+    
+  };
+
+  console.log(indexer);
+
+  console.log(activoItemIndex);
+
+  console.log(direction);
+
   return (
     <>
-    <div style={{ "padding": "0 0 15px 15px", "maxWidth": "100%", "margin": "20px 0" }}>
+    <div style={{ "padding": "0 0 15px 15px", "maxWidth": "100%", "margin": "0" }}>
       <ItemsCarousel
         infiniteLoop={true}
         gutter={12}
         activePosition={'center'}
         chevronWidth={60}
         disableSwipe={false}
-        alwaysShowChevrons={false}
+        alwaysShowChevrons={true}
         numberOfCards={4}
         slidesToScroll={1}
         outsideChevron={false}
         showSlither={false}
         firstAndLastGutter={true}
         activeItemIndex={0}
-        requestToChangeActive={1}
+        requestToChangeActive={value => setActivoItemIndex({ value })}
         rightChevron={<i className="lni-angle-double-right"></i>}
         leftChevron={<i className="lni-angle-double-left"></i>}
       >
@@ -30,11 +60,11 @@ export default function ItemCarousel() {
               <img src="/logo.svg" alt="Logo" style={{ width: '100px' }} />
             </div>
             <div>
-              <h2 onClick={() => this.props.toggleCarousel('prev')}>HOLA</h2>
+              <h2 onClick={() => toggleCarousel('prev')}>HOLA</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div>
-              <i className="lni-plus" onClick={() => this.props.toggleCarousel('prev')}></i>
+              <i className="lni-plus" onClick={() => toggleCarousel('prev')}></i>
             </div>
           </div>
         )}

@@ -1,15 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
 
-export default function InicioCarousel(props){
-    const { index, direction } = props;
+export default function InicioCarousel(){
     return (
       <>
       <Carousel 
-        indicators={false} 
+        indicators={true} 
         fade={true} 
         controls={false}
-        activeIndex={index}
-        direction={direction}
+        activeIndex={0}
       >
         <Carousel.Item>
           <img

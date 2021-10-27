@@ -22,7 +22,7 @@ export default function Header(){
               <Nav.Link href="#pricing">Tienda</Nav.Link>
               <Nav.Link href="#pricing">Ubicación</Nav.Link>
             </Nav>
-            <Form className="buscador" inline>
+            <Form className="buscador" inline="true">
               <FormControl type="text" placeholder="BUSCAR" className="mr-sm-2" />
             </Form>
           </Navbar.Collapse>
