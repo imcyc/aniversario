@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ItemsCarousel from 'react-items-carousel';
+import { ArrowRight } from 'react-bootstrap-icons';;
 
 export default function ItemCarousel() {
 
@@ -9,11 +10,13 @@ export default function ItemCarousel() {
   const [ carouselItemCount, setCarouselItemCount ] = useState(4);
 
   const toggleCarousel = (direction) => {
-    console.log('direccion: ' + direction);
-    
+    setDirection(direction);
     const [min, max] = [0, carouselItemCount - 1]
-    if(direction === 'prev'){
+    if(direction === 'next'){
       setActivoItemIndex(activoItemIndex + 1);
+    }
+    if(direction === 'prev'){
+      setActivoItemIndex(activoItemIndex - 1);
     }
     if(activoItemIndex > max){
       setActivoItemIndex(0);
@@ -21,19 +24,11 @@ export default function ItemCarousel() {
     if(activoItemIndex < min){
       setActivoItemIndex(activoItemIndex - 1);
     }
-    setDirection(direction);
-    
   };
-
-  console.log(indexer);
-
-  console.log(activoItemIndex);
-
-  console.log(direction);
 
   return (
     <>
-    <div style={{ "padding": "0 0 15px 15px", "maxWidth": "100%", "margin": "0" }}>
+    <div style={{ "padding": "0 0 15px 15px", "maxWidth": "100%", "margin": "15px 0" }}>
       <ItemsCarousel
         infiniteLoop={true}
         gutter={12}
@@ -43,10 +38,10 @@ export default function ItemCarousel() {
         alwaysShowChevrons={true}
         numberOfCards={4}
         slidesToScroll={1}
-        outsideChevron={false}
+        outsideChevron={true}
         showSlither={false}
         firstAndLastGutter={true}
-        activeItemIndex={0}
+        activeItemIndex={activoItemIndex}
         requestToChangeActive={value => setActivoItemIndex({ value })}
         rightChevron={<i className="lni-angle-double-right"></i>}
         leftChevron={<i className="lni-angle-double-left"></i>}
@@ -64,7 +59,7 @@ export default function ItemCarousel() {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div>
-              <i className="lni-plus" onClick={() => toggleCarousel('prev')}></i>
+              <ArrowRight onClick={() => toggleCarousel('next')} />
             </div>
           </div>
         )}
