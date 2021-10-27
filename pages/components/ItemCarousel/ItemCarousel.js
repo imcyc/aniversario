@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ItemsCarousel from 'react-items-carousel';
-import { ArrowRight } from 'react-bootstrap-icons';;
+import { ArrowRight, ArrowLeft } from 'react-bootstrap-icons';;
 
 export default function ItemCarousel() {
 
@@ -10,7 +10,9 @@ export default function ItemCarousel() {
   const [ carouselItemCount, setCarouselItemCount ] = useState(4);
 
   const toggleCarousel = (direction) => {
+
     setDirection(direction);
+
     const [min, max] = [0, carouselItemCount - 1]
     if(direction === 'next'){
       setActivoItemIndex(activoItemIndex + 1);
@@ -43,8 +45,8 @@ export default function ItemCarousel() {
         firstAndLastGutter={true}
         activeItemIndex={activoItemIndex}
         requestToChangeActive={value => setActivoItemIndex({ value })}
-        rightChevron={<i className="lni-angle-double-right"></i>}
-        leftChevron={<i className="lni-angle-double-left"></i>}
+        rightChevron={<ArrowRight onClick={() => toggleCarousel('next')} />}
+        leftChevron={<ArrowLeft onClick={() => toggleCarousel('next')} />}
       >
         {Array.from(new Array(10)).map((_, i) =>
           <div
@@ -58,9 +60,11 @@ export default function ItemCarousel() {
               <h2 onClick={() => toggleCarousel('prev')}>HOLA</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
+            {/* 
             <div>
               <ArrowRight onClick={() => toggleCarousel('next')} />
             </div>
+            */}
           </div>
         )}
       </ItemsCarousel>
