@@ -1,4 +1,5 @@
 import Layout from "./components/Layout";
+import { motion } from "framer-motion";
 import InicioCarousel from "./components/Carousel/Carousel";
 import ItemCarousel from "./components/ItemCarousel/ItemCarousel";
 
@@ -7,7 +8,14 @@ export default function Home() {
     <Layout>
       <InicioCarousel/>
       <div className="entrada">
-        <h2>Instituto Mexicano del Cemento y del Concreto A.C.</h2>
+        <motion.div
+          animate={{ opacity: [0, 1] }}
+          transition={{ ease: "easeIn", duration: 3 }}
+        >
+          <h2 style={{
+            'fontWeight':'100'
+          }}>Instituto Mexicano del Cemento y del Concreto A.C.</h2>
+        </motion.div>
         <h3>Compartir el Conocimiento</h3>
         <ItemCarousel/>
       </div>

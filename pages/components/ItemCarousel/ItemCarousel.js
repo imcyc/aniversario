@@ -1,9 +1,42 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import ItemsCarousel from 'react-items-carousel';
-import { ArrowRight, ArrowLeft } from 'react-bootstrap-icons';;
+import { ArrowRight, ArrowLeft } from 'react-bootstrap-icons';
+
+const secciones = [
+  {
+    'imagen': '/images/menu1.jpg',
+    'seccion': 'CURSOS Y SEMINARIOS',
+    'link': '/cursos-y-seminarios'
+  },
+  {
+    'imagen': '/images/menu2.jpg',
+    'seccion': 'GERENCIA TÉCNICA',
+    'link': '/gerencia-tecnica'
+  },
+  {
+    'imagen': '/images/menu1.jpg',
+    'seccion': 'BIBLIOTECA',
+    'link': '/biblioteca'
+  },
+  {
+    'imagen': '/images/menu2.jpg',
+    'seccion': 'REVISTA CYT',
+    'link': '/revista'
+  },
+  {
+    'imagen': '/images/menu1.jpg',
+    'seccion': 'MEMBRESÍAS',
+    'link': '/membresias'
+  },
+  {
+    'imagen': '/images/menu2.jpg',
+    'seccion': 'TIENDA IMCYC',
+    'link': '/tienda-imcyc'
+  }
+]
 
 export default function ItemCarousel() {
-
   const [ indexer, setIndexer ] = useState(0);
   const [ activoItemIndex, setActivoItemIndex ] = useState(0);
   const [ direction, setDirection ] = useState('next');
@@ -45,9 +78,29 @@ export default function ItemCarousel() {
         firstAndLastGutter={true}
         activeItemIndex={activoItemIndex}
         requestToChangeActive={value => setActivoItemIndex({ value })}
-        rightChevron={<ArrowRight onClick={() => toggleCarousel('next')} />}
-        leftChevron={<ArrowLeft onClick={() => toggleCarousel('next')} />}
+        rightChevron={<ArrowRight />}
+        leftChevron={<ArrowLeft />}
       >
+        {secciones.map((seccion, i) => (
+          <div
+            key={i}
+            className="ItemCarousel"
+          >
+              <div>
+                <Link href="/quienes-somos">
+                  <img src={seccion.imagen} alt="Logo" style={{ width: '100px' }} />
+                </Link>
+              </div>
+              <div>
+                <h2 onClick={() => toggleCarousel('prev')}>{seccion.seccion}</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
+              </div>
+            <div>
+              <ArrowRight onClick={() => toggleCarousel('next')} />
+            </div>
+          </div>
+        ))}
+        {/* 
         {Array.from(new Array(10)).map((_, i) =>
           <div
             key={i}
@@ -60,13 +113,12 @@ export default function ItemCarousel() {
               <h2 onClick={() => toggleCarousel('prev')}>HOLA</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            {/* 
             <div>
               <ArrowRight onClick={() => toggleCarousel('next')} />
             </div>
-            */}
           </div>
         )}
+        */}
       </ItemsCarousel>
     </div>
     <style jsx>{`
@@ -91,7 +143,7 @@ export default function ItemCarousel() {
       }
       
       .ItemCarousel h2 {
-        font-size: 1.3em;
+        font-size: 1.1em;
         text-align: left;
         padding-left: 10px;
         cursor: pointer;
@@ -99,6 +151,7 @@ export default function ItemCarousel() {
         margin-bottom: 0;
         margin-top: 0;
         padding-top: 0;
+        margin: 10px 0;
       }
       
       .ItemCarousel p {
