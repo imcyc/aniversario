@@ -90,7 +90,7 @@ export default function ItemCarousel() {
                 <Link href="/quienes-somos">
                   <img src={seccion.imagen} alt="Logo" style={{ 
                     'width': '100px',
-                    'boxShadow': '0 5px 5px #000'
+                    'boxShadow': '3px 3px 3px #000'
                   }} />
                 </Link>
               </div>
