@@ -146,7 +146,7 @@ export default function ItemCarousel() {
       }
       
       .ItemCarousel h2 {
-        font-size: 1.1em;
+        font-size: 0.9rem;
         text-align: left;
         padding-left: 10px;
         cursor: pointer;

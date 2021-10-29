@@ -4,33 +4,32 @@ export default function InicioCarousel(){
     return (
       <>
       <Carousel 
-        indicators={true} 
+        indicators={false} 
         fade={true} 
         controls={false}
-        activeIndex={0}
       >
-        <Carousel.Item>
+        <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/bkg.jpg"
+            src="/images/bkg5.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 min-vh-100"
             src="/images/bkg1.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 min-vh-100"
             src="/images/bkg2.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 min-vh-100"
             src="/images/bkg3.jpg"
