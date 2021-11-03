@@ -7,7 +7,7 @@ body {
   background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 45%, rgba(177,177,177,1) 100%);
   background: radial-gradient(circle, rgba(255,255,255,1) 45%, rgba(177,177,177,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#b1b1b1",GradientType=1);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
   overflow: hidden;
 }
 
@@ -82,12 +82,13 @@ form.buscador input {
 .entrada h2 {
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 0 5px 5px #000;
+  text-shadow: 0 2px 5px #000;
+  font-size: 2.2rem;
 }
 
 .entrada h3 {
   font-weight: bold;
   text-transform: uppercase;
-  color: #a8a8a8;
-  text-shadow: 0 5px 5px #000;
+  color: #f2f2f2;
+  text-shadow: 0 2px 5px #000;
 }
