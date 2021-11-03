@@ -5,7 +5,7 @@ export default function quienesSomos(){
         <Layout>
             <div className="qsomos">
                 <div className="col ix">
-                    <h2>hola</h2>
+                    <h2>QUIÉNES SOMOS</h2>
                 </div>
                 <div className="col id">
                     <h1>hola</h1>

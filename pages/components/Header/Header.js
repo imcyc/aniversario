@@ -13,7 +13,7 @@ export default function Header(){
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#home">Quiénes Somos</Nav.Link>
+              <Nav.Link href="/quienes-somos">Quiénes Somos</Nav.Link>
               <Nav.Link href="#features">Cursos</Nav.Link>
               <Nav.Link href="#pricing">Gerencia Técnica</Nav.Link>
               <Nav.Link href="#pricing">Historia</Nav.Link>
