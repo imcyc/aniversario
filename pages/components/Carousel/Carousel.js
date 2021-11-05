@@ -25,7 +25,7 @@ export default function InicioCarousel(){
         <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/bkg1.jpg"
+            src="/images/bkg3.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
