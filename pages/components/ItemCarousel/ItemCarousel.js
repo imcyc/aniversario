@@ -126,7 +126,7 @@ export default function ItemCarousel() {
     </div>
     <style jsx>{`
       .ItemCarousel {
-        background: rgba(0,0,0,0.3);
+        background: rgba(0,0,0,0.5);
         padding: 10px;
         display: flex;
         flex-direction: row;
@@ -146,7 +146,7 @@ export default function ItemCarousel() {
       }
       
       .ItemCarousel h2 {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         text-align: left;
         padding-left: 10px;
         cursor: pointer;
@@ -158,7 +158,7 @@ export default function ItemCarousel() {
       }
       
       .ItemCarousel p {
-        font-size: 0.7em;
+        font-size: 1rem;
         color: #ffffff;
         text-align:left;
         padding-left: 10px;
