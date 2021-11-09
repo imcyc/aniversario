@@ -96,7 +96,7 @@ export default function ItemCarousel() {
               </div>
               <div>
                 <h2 onClick={() => toggleCarousel('prev')}>{seccion.seccion}</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             <div>
               <ArrowRight onClick={() => toggleCarousel('next')} />
@@ -146,7 +146,7 @@ export default function ItemCarousel() {
       }
       
       .ItemCarousel h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: left;
         padding-left: 10px;
         cursor: pointer;

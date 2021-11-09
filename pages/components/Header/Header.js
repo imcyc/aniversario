@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 import Form from 'react-bootstrap/Form';
@@ -7,8 +8,10 @@ export default function Header(){
     return (
       <>
         <Navbar expand="lg">
-          <Navbar.Brand href="#home">
-            <img src="/logo.svg" alt="" title="" style={{'width':'8em'}} />
+          <Navbar.Brand>
+            <Link href="/">
+              <img src="/logo.svg" alt="" title="" style={{'width':'8em'}} />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
