@@ -67,7 +67,7 @@ code {
 
 form.buscador input {
   border: none;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.8);
   font-size: 0.8rem;
   color: #fff !important;
 }
