@@ -119,6 +119,12 @@ form.buscador input {
   color: #555;
   cursor: pointer;
   transition: all 1s;
+  display: flex;
+  align-items: center;
+}
+
+.nav-pills .nav-link svg {
+  margin-right: 5px;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
