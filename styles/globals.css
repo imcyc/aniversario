@@ -48,13 +48,11 @@ code {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: #333;
   text-transform: uppercase;
   font-size: 0.9rem;
-  background: rgba(1, 44, 57, 0.5);
   margin-right: 3px;
   transition: all 1s;
-  border-radius: 10px 10px 0;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -110,4 +108,24 @@ form.buscador input {
 
 .qsomos .col {
   flex: 1 0 20%;
+}
+
+.nav-pills .nav-link {
+  background: #fff;
+  border-radius: 0;
+  margin-top: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background: #016380;
+}
+
+.nav-pills .nav-link:hover {
+  background: #016380;
+  color: #fff;
 }
