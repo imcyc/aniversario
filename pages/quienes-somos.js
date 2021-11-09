@@ -8,7 +8,7 @@ export default function quienesSomos() {
     return (
         <Layout>
             <Container fluid={true} className="d-flex qsomos">
-                <Row style={{ 'width': '100vw' }} style={{ 'height': '85vh', 'display': 'flex', 'justifyContent': 'center', 'alignItems': 'center' }}>
+                <Row style={{ 'width': '100vw', 'height': '85vh', 'display': 'flex', 'justifyContent': 'center', 'alignItems': 'center' }}>
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                         <Col sm={2}>
                             <Nav variant="pills" className="flex-column">
