@@ -53,6 +53,8 @@ code {
   font-size: 0.9rem;
   margin-right: 3px;
   transition: all 1s;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -104,7 +106,7 @@ form.buscador input {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url(/images/bkg8.jpg) no-repeat center center fixed; 
+  background: url(/images/bkg9.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -120,7 +122,7 @@ form.buscador input {
 }
 
 .nav-pills .nav-link {
-  background: #fff;
+  background: rgba(255,255,255,0.5);
   border-radius: 0;
   margin-top: 3px;
   font-size: 0.8rem;
@@ -130,6 +132,7 @@ form.buscador input {
   transition: all 1s;
   display: flex;
   align-items: center;
+  color: #fff;
 }
 
 .nav-pills .nav-link svg {
@@ -137,10 +140,10 @@ form.buscador input {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background: #016380;
+  background: rgba(0,0,0,0.5);
 }
 
 .nav-pills .nav-link:hover {
-  background: #016380;
+  background: rgba(0,0,0,0.5);
   color: #fff;
 }
