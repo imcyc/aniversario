@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Layout from "./components/Layout";
 import Tab from 'react-bootstrap/Tab';
 import Nav from 'react-bootstrap/Nav';
@@ -5,47 +6,57 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRight } from "react-bootstrap-icons";
 
 export default function quienesSomos() {
+    const [categoria, setCategoria] = useState('first');
+
     return (
         <Layout>
-            <Container fluid={true} className="d-flex qsomos">
-                <Row style={{ 'width': '100vw', 'height': '85vh', 'display': 'flex', 'justifyContent': 'center', 'alignItems': 'center' }}>
+            <Container fluid={true} className={`d-flex qsomos ${categoria}`}>
+                <Row style={{
+                    'width': '100vw', 
+                    'height': '85vh', 
+                    'display': 'flex', 
+                    'justifyContent': 'center', 
+                    'alignItems': 'center',
+                    }}>
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                         <Col sm={2}>
                             <Nav variant="pills" className="flex-column">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first"><ArrowRight/> QUIÉNES SOMOS</Nav.Link>
+                                    <Nav.Link eventKey="first" onClick={() => setCategoria('first')}><ArrowRight/> QUIÉNES SOMOS</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second"><ArrowRight/> SERVICIOS DE LABORATORIO</Nav.Link>
+                                    <Nav.Link eventKey="second" onClick={() => setCategoria('second')}><ArrowRight/> SERVICIOS DE LABORATORIO</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third"><ArrowRight/> ASESORÍAS TÉCNICAS</Nav.Link>
+                                    <Nav.Link eventKey="third" onClick={() => setCategoria('third')}><ArrowRight/> ASESORÍAS TÉCNICAS</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="fifth"><ArrowRight/> CURSOS Y SEMINARIOS</Nav.Link>
+                                    <Nav.Link eventKey="fifth" onClick={() => setCategoria('fifth')}><ArrowRight/> CURSOS Y SEMINARIOS</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="sixth"><ArrowRight/> PUBLICACIONES</Nav.Link>
+                                    <Nav.Link eventKey="sixth" onClick={() => setCategoria('sixth')}><ArrowRight/> PUBLICACIONES</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="seventh"><ArrowRight/> BIBLIOTECA</Nav.Link>
+                                    <Nav.Link eventKey="seventh" onClick={() => setCategoria('seventh')}><ArrowRight/> BIBLIOTECA</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="eigth"><ArrowRight/> CRECIMIENTO SOSTENIDO</Nav.Link>
+                                    <Nav.Link eventKey="eigth" onClick={() => setCategoria('eigth')}><ArrowRight/> CRECIMIENTO SOSTENIDO</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                         </Col>
-                        <Col>
+                        <Col style={{
+                            'padding': '0 20px'
+                        }}>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
-                                    <h1><b><ArrowRight/> INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</b></h1>
+                                    <h1 className="text-white"><b><ArrowRight/> INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</b></h1>
                                     <hr />
-                                    <p className="text-justify mr-5"><b>El IMCYC, A.C. es una asociación no lucrativa dedicada a la investigación, enseñanza y difusión de las técnicas de aplicación del cemento y del concreto</b>. Su misión es promover la utilización óptima del cemento y del concreto para satisfacer las necesidades del mercado con calidad, productividad y oportunidad, contribuyendo a mejorar el desempeño profesional, el desarrollo y beneficio económico de la industria, así como de la sociedad.<br /><br />El IMCYC surgió en 1923 como un «Comité para Propagar el Uso del Cemento Portland». Ya <b>en 1959 se constituyó como Instituto Mexicano del Cemento y del Concreto, A.C., con el objetivo de investigar y promover métodos constructivos y soluciones técnicas que permitan un uso más económico y racional del concreto en la construcción</b>, para ofrecer el concreto al diseñador, al constructor y al propietario como la alternativa más ventajosa frente al empleo de otros materiales, además de crear más y mejores satisfactores para los asociados y sus clientes.<br /><br />De este modo, se aportan nuevos conocimientos sobre el cemento y el concreto, y se enseña a trabajarlo con calidad, resolviendo los problemas de aplicación en las obras y orientando a los profesionales en sus múltiples oportunidades de utilización. Así mismo, se fortalecen nuestras estructuras, desarrollando al personal, ampliando nuestra presencia nacional e internacional y haciendo más efectivas y eficientes las operaciones. <b>El IMCYC es imagen, voz y representatividad del Sector Cemento y Concreto ante la sociedad, las autoridades nacionales y entidades internacionales, no estando comprometido con ninguna de las empresas del ramo</b>.</p>
+                                    <p className="text-justify mr-5 text-white"><b>El IMCYC, A.C. es una asociación no lucrativa dedicada a la investigación, enseñanza y difusión de las técnicas de aplicación del cemento y del concreto</b>. Su misión es promover la utilización óptima del cemento y del concreto para satisfacer las necesidades del mercado con calidad, productividad y oportunidad, contribuyendo a mejorar el desempeño profesional, el desarrollo y beneficio económico de la industria, así como de la sociedad.<br /><br />El IMCYC surgió en 1923 como un «Comité para Propagar el Uso del Cemento Portland». Ya <b>en 1959 se constituyó como Instituto Mexicano del Cemento y del Concreto, A.C., con el objetivo de investigar y promover métodos constructivos y soluciones técnicas que permitan un uso más económico y racional del concreto en la construcción</b>, para ofrecer el concreto al diseñador, al constructor y al propietario como la alternativa más ventajosa frente al empleo de otros materiales, además de crear más y mejores satisfactores para los asociados y sus clientes.<br /><br />De este modo, se aportan nuevos conocimientos sobre el cemento y el concreto, y se enseña a trabajarlo con calidad, resolviendo los problemas de aplicación en las obras y orientando a los profesionales en sus múltiples oportunidades de utilización. Así mismo, se fortalecen nuestras estructuras, desarrollando al personal, ampliando nuestra presencia nacional e internacional y haciendo más efectivas y eficientes las operaciones. <b>El IMCYC es imagen, voz y representatividad del Sector Cemento y Concreto ante la sociedad, las autoridades nacionales y entidades internacionales, no estando comprometido con ninguna de las empresas del ramo</b>.</p>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                    <h1><b><ArrowRight/> SERVICIOS DE LABORATORIO</b></h1>
+                                    <h1 className="text-white"><b><ArrowRight/> SERVICIOS DE LABORATORIO</b></h1>
                                     <hr />
-                                    <p className="text-justify mr-5"><b>La institución cuenta con equipo especializado, personal altamente capacitado y funcionales instalaciones para realizar los estudios de verificación de calidad del concreto en obras y plantas productoras</b>, así como para la evaluación de estructuras dañadas, proyectos de reparación y estudios sobre propiedades físicas, químicas y mecánicas de materiales para construcción.<br /><br />El IMCYC cuenta con cuatro laboratorios especializados: <b>Concreto, Cemento, Metrología y Geotecnia</b>.</p>
+                                    <p className="text-justify mr-5 text-white"><b>La institución cuenta con equipo especializado, personal altamente capacitado y funcionales instalaciones para realizar los estudios de verificación de calidad del concreto en obras y plantas productoras</b>, así como para la evaluación de estructuras dañadas, proyectos de reparación y estudios sobre propiedades físicas, químicas y mecánicas de materiales para construcción.<br /><br />El IMCYC cuenta con cuatro laboratorios especializados: <b>Concreto, Cemento, Metrología y Geotecnia</b>.</p>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
                                     <h1><b><ArrowRight/> ASESORÍAS TÉCNICAS</b></h1>

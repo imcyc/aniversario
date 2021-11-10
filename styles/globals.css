@@ -104,6 +104,15 @@ form.buscador input {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: url(/images/bkg8.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.qsomos.second {
+  background: url(/images/bkg7.jpg) no-repeat center center fixed; 
 }
 
 .qsomos .col {
