@@ -55,6 +55,7 @@ code {
   transition: all 1s;
   background: rgba(0,0,0,0.5);
   color: #fff;
+  border-bottom: 5px solid #000;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -106,7 +107,7 @@ form.buscador input {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url(/images/bkg9.jpg) no-repeat center center fixed; 
+  background: url(/images/bkg11.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -114,6 +115,10 @@ form.buscador input {
 }
 
 .qsomos.second {
+  background: url(/images/bkg10.jpg) no-repeat center center fixed; 
+}
+
+.qsomos.third {
   background: url(/images/bkg7.jpg) no-repeat center center fixed; 
 }
 
@@ -146,4 +151,9 @@ form.buscador input {
 .nav-pills .nav-link:hover {
   background: rgba(0,0,0,0.5);
   color: #fff;
+}
+
+.tab-content>.active {
+  background: rgba(0,0,0,0.8);
+    padding: 20px;
 }
