@@ -1,5 +1,5 @@
 import Layout from "./components/Layout";
-import Bkg from "./components/bkg";
+import Bkg from "./components/Bkg";
 
 export default function gerenciaImcyc(){
   return(
