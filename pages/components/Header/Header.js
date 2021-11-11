@@ -17,13 +17,13 @@ export default function Header(){
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="/quienes-somos">Quiénes Somos</Nav.Link>
-              <Nav.Link href="#features">Cursos</Nav.Link>
-              <Nav.Link href="#pricing">Gerencia Técnica</Nav.Link>
-              <Nav.Link href="#pricing">Historia</Nav.Link>
-              <Nav.Link href="#pricing">Membresías</Nav.Link>
-              <Nav.Link href="#pricing">Directorio</Nav.Link>
-              <Nav.Link href="#pricing">Tienda</Nav.Link>
-              <Nav.Link href="#pricing">Ubicación</Nav.Link>
+              <Nav.Link href="/cursos">Cursos</Nav.Link>
+              <Nav.Link href="/gerencia-imcyc">Gerencia Técnica</Nav.Link>
+              <Nav.Link href="/historia">Historia</Nav.Link>
+              <Nav.Link href="/membresias">Membresías</Nav.Link>
+              <Nav.Link href="/directorio">Directorio</Nav.Link>
+              <Nav.Link href="/tienda-imcyc">Tienda</Nav.Link>
+              <Nav.Link href="/ubicacion">Ubicación</Nav.Link>
             </Nav>
             <Form className="buscador" inline="true">
               <FormControl type="text" placeholder="BUSCAR" className="mr-sm-2" />
