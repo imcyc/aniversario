@@ -13,6 +13,7 @@ export default function QuienesSomos() {
 
     return (
         <Layout>
+            {/*
             <div className="video-background" style={{
                 'zIndex':'1'
             }}>
@@ -24,6 +25,7 @@ export default function QuienesSomos() {
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
             </div>
+            */}
             <Container fluid={true} className={`d-flex qsomos ${categoria}`} style={{
                 'zIndex':'100000'
             }}>
