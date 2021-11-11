@@ -1,9 +1,12 @@
 import Layout from "./components/Layout";
+import Bkg from "./components/bkg";
 
 export default function directorio(){
   return(
     <Layout>
-      <h1>DIRECTORIO IMCYC</h1>
+      <Bkg imgx="/images/bkg_directorio.jpg">
+        <h1>DIRECTORIO IMCYC</h1>
+      </Bkg>
     </Layout>
   )
 }

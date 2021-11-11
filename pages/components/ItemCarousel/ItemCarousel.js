@@ -7,12 +7,12 @@ const secciones = [
   {
     'imagen': '/images/menu1.jpg',
     'seccion': 'CURSOS Y SEMINARIOS',
-    'link': '/cursos-y-seminarios'
+    'link': '/cursos'
   },
   {
     'imagen': '/images/menu2.jpg',
     'seccion': 'GERENCIA TÉCNICA',
-    'link': '/gerencia-tecnica'
+    'link': '/gerencia-imcyc'
   },
   {
     'imagen': '/images/menu1.jpg',
@@ -95,7 +95,9 @@ export default function ItemCarousel() {
                 </Link>
               </div>
               <div>
-                <h2 onClick={() => toggleCarousel('prev')}>{seccion.seccion}</h2>
+                <Link href={seccion.link}>
+                  <h2 onClick={() => toggleCarousel('prev')}>{seccion.seccion}</h2>
+                </Link>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             <div>

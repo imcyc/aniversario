@@ -1,9 +1,12 @@
 import Layout from "./components/Layout";
+import Bkg from "./components/bkg";
 
 export default function historia(){
   return(
     <Layout>
-      <h1>HISTORIA IMCYC</h1>
+      <Bkg imgx="/images/bkg_historia.jpg">
+        <h1>HISTORIA IMCYC</h1>
+      </Bkg>
     </Layout>
   )
 }
