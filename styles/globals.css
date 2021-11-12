@@ -53,9 +53,8 @@ code {
   font-size: 0.9rem;
   margin-right: 3px;
   transition: all 1s;
-  background: rgba(0,0,0,0.5);
   color: #fff;
-  border-bottom: 5px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {

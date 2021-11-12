@@ -5,9 +5,9 @@ import Footer from './Footer/Footer';
 import { motion } from "framer-motion";
 
 const variants = {
-  hidden: { opacity: 0, x: 0, y: 0, z: 100 },
-  enter: { opacity: 1, x: 0, y: 0, z: 0 },
-  exit: { opacity: 0, x: 0, y: 0, z: -100 },
+  hidden: { opacity: 0, x: 0, y: -100 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: 1000 },
 }
 
 export default function Layout({children}) {
@@ -27,7 +27,11 @@ export default function Layout({children}) {
         initial="hidden" // Set the initial state to variants.hidden
         animate="enter" // Animated state to variants.enter
         exit="exit" // Exit state (used later) to variants.exit
-        transition={{ type: 'linear' }} // Set the transition to linear
+        transition={{
+          type: "spring",
+          stiffness: 500,
+          damping: 100,
+        }} // Set the transition to linear
         className=""
       >
         {children}
