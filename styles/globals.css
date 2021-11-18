@@ -220,6 +220,7 @@ form.buscador input {
   z-index: 100;
   background: rgba(0,0,0,0.4);
   padding: 20px;
+  box-shadow: 0,0,10px,#000;
 }
 
 .pagina-aniversario h1{
@@ -230,14 +231,14 @@ form.buscador input {
 
 .pagina-aniversario p {
   color: #00d7ff;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #background-video{
   object-fit: cover;
-      width: 100vw;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
