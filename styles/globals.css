@@ -214,3 +214,30 @@ form.buscador input {
   font-size: 4rem;
   text-shadow: 0 0 10px #000;
 }
+
+.pagina-aniversario {
+  text-align: center;
+  z-index: 100;
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+}
+
+.pagina-aniversario h1{
+  font-size: 2.5rem;
+  font-weight: 100;
+  font-family: 'Oswald', sans-serif;
+}
+
+.pagina-aniversario p {
+  color: #00d7ff;
+  font-size: 1.2rem;
+}
+
+#background-video{
+  object-fit: cover;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+}

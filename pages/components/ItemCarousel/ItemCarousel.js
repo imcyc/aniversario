@@ -160,7 +160,7 @@ export default function ItemCarousel() {
       }
       
       .ItemCarousel p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: #ffffff;
         text-align:left;
         padding-left: 10px;

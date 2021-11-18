@@ -8,17 +8,17 @@ export default function InicioCarousel(){
         fade={true} 
         controls={false}
       >
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={20000}>
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/bkg5.jpg"
+            src="/images/bkg_aniversario.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
         <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/bkg6.jpg"
+            src="/images/bkg_aniversario.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
