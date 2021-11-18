@@ -5,7 +5,7 @@ export default function gerenciaImcyc(){
   return(
     <Layout>
       <Bkg imgx="/images/bkg_gerencia.jpg">
-      <div>
+        <div>
           <video id='background-video' autoPlay loop muted>
             <source src='/videos/video1.mp4' type='/video/mp4' />
             <source src='/videos/video1.mp4' type="video/ogg" /> 
