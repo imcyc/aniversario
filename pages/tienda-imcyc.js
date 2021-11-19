@@ -18,7 +18,7 @@ export default function tiendaImcyc(){
         <h1>TIENDA IMCYC</h1>
         <hr/>
         {entries.map((producto) => (
-          <div className="d-flex flex-column">
+          <div key={producto.id} className="d-flex flex-column">
             <h2>{producto.name}</h2>
           </div>
         ))};
