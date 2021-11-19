@@ -1,10 +1,10 @@
 import Layout from "./components/Layout";
 import Bkg from "./components/Bkg";
 
-import { useEntries } from '../lib/swr-hooks';
+import { UseEntries } from '../lib/swr-hooks';
 
 export default function tiendaImcyc(){
-  const { entries, isLoading } = useEntries();
+  const { entries, isLoading } = UseEntries();
 
   if(isLoading){
     return 'Cargando';
