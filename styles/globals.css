@@ -241,4 +241,9 @@ form.buscador input {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
+}
+
+.tienda {
+  z-index: 100;
 }
