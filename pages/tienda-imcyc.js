@@ -1,52 +1,50 @@
-import Layout from "./components/Layout";
+import LayoutTienda from "./components/LayoutTienda";
 import Bkg from "./components/Bkg";
+import CardProducto from "./components//CardProducto/CardProducto";
+import Loader from './components/Loader/Loader';
 import { getWhyNextReasons } from "../lib/api";
-
 import { UseEntries } from '../lib/swr-hooks';
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function tiendaImcyc({ reasons }){
   const { entries, isLoading } = UseEntries();
 
   if(isLoading){
-    return 'Cargando...';
+    return <Loader/>;
   };
 
-  console.log(entries);
-
   return(
-    <Layout>
-      <Bkg imgx="/images/bkg_tienda_.jpg">
-        <div className="d-none">
-          <video id='background-video' autoPlay loop muted>
-            <source src='/videos/video6.mp4' type='/video/mp4' />
-            <source src='/videos/video6.mp4' type="video/ogg" /> 
-          </video>
-        </div>
-        <div className="d-flex flex-column tienda">
-          <h1>TIENDA IMCYC</h1>
-          <hr/>
-          <div className="grid grid-cols-1 grid-cols-2 grid-cols-3 gap-4">
+    <LayoutTienda>
+      <Container className="tienda">
+        <Row>
+          <Col sm={3}>
+            <h1>TIENDA IMCYC</h1>
+            <hr/>
+          </Col>
+          <Col>
+          <Row>
             {reasons
               .slice(0, reasons.length - 1)
-              .map(({ title, description, href }) => (
-                <>
-                  <h3 className="font-bold mb-2">{title}</h3>
-                  <div dangerouslySetInnerHTML={{ __html: description }} />
-                  <span className="text-blue-600 hover:text-blue-400 hover:underline mt-4 block">
-                    Documentation →
-                  </span>
-                </>
+              .map(({ title, description, href, autor, precio }) => (
+                <Col sm={4}>
+                  <CardProducto 
+                    titulo={title}
+                    descripcion={description}
+                    autor={autor}
+                    precio={precio}
+                  />
+                </Col>
               ))}
-          </div>
-          <hr/>
+          </Row>
           {/*entries.map((producto) => (
             <div key={producto.id} className="d-flex flex-column">
               <h2>{producto.name}</h2>
             </div>
           ))*/};
-        </div>
-      </Bkg>
-    </Layout>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutTienda>
   )
 }
 

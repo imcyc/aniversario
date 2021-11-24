@@ -8,7 +8,6 @@ body {
   background: radial-gradient(circle, rgba(255,255,255,1) 45%, rgba(177,177,177,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#b1b1b1",GradientType=1);
   font-family: 'Oswald', sans-serif;
-  overflow: hidden;
 }
 
 code {
@@ -246,4 +245,47 @@ form.buscador input {
 
 .tienda {
   z-index: 100;
+}
+
+.container.tienda {
+  margin-top: 90px;
+  max-width: 98%;
+  margin-bottom: 120px;
+}
+
+.container.tienda .card {
+  margin: 10px 0;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0 10px 10px #dedede;
+}
+
+.container.tienda .card .btn.btn-primary {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: 0;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0,20,36);
+  background: linear-gradient(341deg, rgba(0,20,36,1) 0%, rgba(9,81,121,1) 98%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader h2 {
+  color: #fff;
+  padding: 10px;
+  font-weight: 100;
+}
+
+.loader p {
+  color: #fff;
+  padding: 10px;
+  font-weight: 100;
 }
