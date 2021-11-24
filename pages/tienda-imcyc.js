@@ -25,8 +25,8 @@ export default function tiendaImcyc({ reasons }){
           <Row>
             {reasons
               .slice(0, reasons.length - 1)
-              .map(({ title, description, href, autor, precio }) => (
-                <Col sm={4}>
+              .map(({ title, description, autor, precio }, i) => (
+                <Col key={i} sm={4}>
                   <CardProducto 
                     titulo={title}
                     descripcion={description}
