@@ -1,10 +1,10 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-export default function CardProducto({titulo, descripcion, autor, precio}){
+export default function CardProducto({titulo, descripcion, autor, precio, imagen}){
   return(
     <Card>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={imagen} />
       <Card.Body>
         <Card.Title>{titulo}</Card.Title>
         <Card.Text>
