@@ -41,7 +41,7 @@ export default function tiendaImcyc({ reasons }){
             <div key={producto.id} className="d-flex flex-column">
               <h2>{producto.name}</h2>
             </div>
-          ))*/};
+          ))*/}
           </Col>
         </Row>
       </Container>
