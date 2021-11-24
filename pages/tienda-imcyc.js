@@ -29,18 +29,13 @@ export default function tiendaImcyc({ reasons }){
             {reasons
               .slice(0, reasons.length - 1)
               .map(({ title, description, href }) => (
-                <a
-                  className="border border-grey-200 rounded p-4 hover:shadow-lg hover:border-transparent"
-                  key={title}
-                  href={href}
-                  target="_blank"
-                >
+                <>
                   <h3 className="font-bold mb-2">{title}</h3>
                   <div dangerouslySetInnerHTML={{ __html: description }} />
                   <span className="text-blue-600 hover:text-blue-400 hover:underline mt-4 block">
                     Documentation →
                   </span>
-                </a>
+                </>
               ))}
           </div>
           <hr/>
