@@ -7,12 +7,11 @@ body {
   background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 45%, rgba(177,177,177,1) 100%);
   background: radial-gradient(circle, rgba(255,255,255,1) 45%, rgba(177,177,177,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#b1b1b1",GradientType=1);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: 'Outfit', sans-serif;
 }
 
 .Site {
@@ -288,4 +287,17 @@ form.buscador input {
   color: #fff;
   padding: 10px;
   font-weight: 100;
+}
+
+.tienda .card-title {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  height: 90px;
+  display: flex;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+p.autor {
+  font-size: 0.5rem;
 }

@@ -10,7 +10,7 @@ export default function CardProducto({titulo, descripcion, autor, precio, imagen
         <Card.Text>
           <h4>$ {precio}.00</h4>
           <div dangerouslySetInnerHTML={{ __html: descripcion }} />
-          <p>{autor}</p>
+          <p className="autor">{autor}</p>
         </Card.Text>
         <Button variant="primary">COMPRAR AQUÍ</Button>
       </Card.Body>
