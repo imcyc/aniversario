@@ -25,7 +25,7 @@ export default function tiendaImcyc({ reasons }){
             {reasons
               .slice(0, reasons.length - 1)
               .map(({ title, description, autor, precio, imagen }, i) => (
-                <Col key={i} sm={3}>
+                <Col key={i} sm={6}>
                   <CardProducto 
                     titulo={title}
                     descripcion={description}
