@@ -310,6 +310,8 @@ form.buscador input {
   font-size: 0.7rem;
   height: 70px;
   overflow: auto;
+  text-align: justify;
+  padding-right: 20px;
 }
 
 .tienda p.card-text p.autor {
