@@ -253,7 +253,7 @@ form.buscador input {
 }
 
 .container.tienda .card {
-  margin: 10px 0;
+  margin: 0;
   border-radius: 0;
   border: 0;
   box-shadow: 0 10px 10px #dedede;
@@ -299,4 +299,10 @@ form.buscador input {
 
 p.autor {
   font-size: 0.5rem;
+}
+
+.filtros h2 {
+  font-size: 1rem;
+  padding: 10px;
+  background: #dedede;
 }

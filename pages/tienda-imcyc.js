@@ -17,8 +17,8 @@ export default function tiendaImcyc({ reasons }){
     <LayoutTienda>
       <Container className="tienda">
         <Row>
-          <Col sm={2}>
-            
+          <Col sm={2} className="filtros">
+            <h2>FILTROS</h2>
           </Col>
           <Col>
           <Row>
