@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 export default function Footer(){
   return(
     <div className="Footer">
-        <Container className="d-flex justify-content-center">
+        <Container className="d-flex justify-content-center patrocinios">
           <Row>
             <Col>
               <img src="/images/asociados/logo_cemex.svg" alt="" title="" style={{'width':'70px'}} />
@@ -32,15 +32,18 @@ export default function Footer(){
           .Footer {
             width: 100%;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            z-index: 1000;
+            background: #dfdfdf;
+            padding-top:20px;
+          }
+          .patrocinios {
+            background: #fff;
           }
           .Footer h2 {
             font-weight: 100;
             font-size: 0.9em;
-            padding: 10px;
-            color: #ffffff;
+            color: #333;
+            margin: 0;
+            padding: 10px 0;
           }
         `}</style>
     </div>
