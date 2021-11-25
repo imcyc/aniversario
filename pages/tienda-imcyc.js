@@ -17,16 +17,15 @@ export default function tiendaImcyc({ reasons }){
     <LayoutTienda>
       <Container className="tienda">
         <Row>
-          <Col sm={3}>
-            <h1>TIENDA IMCYC</h1>
-            <hr/>
+          <Col sm={2}>
+            
           </Col>
           <Col>
           <Row>
             {reasons
               .slice(0, reasons.length - 1)
               .map(({ title, description, autor, precio, imagen }, i) => (
-                <Col key={i} sm={4}>
+                <Col key={i} sm={3}>
                   <CardProducto 
                     titulo={title}
                     descripcion={description}

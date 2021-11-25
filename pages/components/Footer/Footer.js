@@ -32,7 +32,7 @@ export default function Footer(){
           .Footer {
             width: 100%;
             text-align: center;
-            background: #dfdfdf;
+            background: #fff;
             padding-top:20px;
           }
           .patrocinios {
