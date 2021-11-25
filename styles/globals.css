@@ -297,8 +297,15 @@ form.buscador input {
   padding-bottom: 20px;
 }
 
-p.autor {
+.tienda p.card-text p {
+  font-size: 0.7rem;
+  height: 70px;
+  overflow: auto;
+}
+
+.tienda p.card-text p.autor {
   font-size: 0.5rem;
+  height: auto;
 }
 
 .filtros h2 {
