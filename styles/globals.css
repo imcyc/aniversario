@@ -257,7 +257,8 @@ form.buscador input {
 }
 
 .container.tienda .card .card-img-top {
-  width: 200px;
+  width: 120px;
+  height: 150px;
 }
 
 .container.tienda .card .btn.btn-primary {
