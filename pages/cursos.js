@@ -1,10 +1,12 @@
 import LayoutTienda from "./components/LayoutTienda";
 import Bkg from "./components/Bkg";
+import Form from 'react-bootstrap/Form';
 import CardProducto from "./components//CardProducto/CardProducto";
 import Loader from './components/Loader/Loader';
 import { getWhyNextReasons } from "../lib/apiCursos";
 import { UseEntries } from '../lib/swr-hooks';
 import { Container, Row, Col } from "react-bootstrap";
+import Button from 'react-bootstrap/Button';
 
 export default function cursos({ reasons }){
   const { entries, isLoading } = UseEntries();
@@ -17,8 +19,28 @@ export default function cursos({ reasons }){
     <LayoutTienda>
       <Container className="tienda">
         <Row>
-          <Col sm={2} className="filtros">
-            <h2>FILTROS</h2>
+          <Col sm={3} className="filtros">
+          <Form>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Buscar por fecha:</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Buscar por tema:</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Buscar por profesor:</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Buscar por precio:</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+              </Form.Group>
+              <Button variant="primary" type="submit" className="w-100">
+                FILTRAR
+              </Button>
+            </Form>
           </Col>
           <Col>
           <Row>
