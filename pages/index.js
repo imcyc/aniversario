@@ -14,10 +14,14 @@ export default function Home() {
           transition={{ ease: "easeIn", duration: 3 }}
         >
           <Link href="/aniversario">
-            <img src="/images/logo_aniversario.png" alt="imcyc" title="imcyc" className="mb-5" style={{'width':'400px','opacity':'0.7'}} />
+            <img src="/logo_sesenta.svg" alt="imcyc" title="imcyc" className="mb-5" style={{'width':'300px','opacity':'0.7','marginRight':'30px'}} />
           </Link>
+          <Link href="/aniversario">
+            <img src="/images/logo_aniversario.png" alt="imcyc" title="imcyc" className="mb-5" style={{'width':'250px','opacity':'0.7'}} />
+          </Link>
+          
         </motion.div>
-        <ItemCarousel/>
+        {/*<ItemCarousel/>*/}
       </div>
     </Layout>
   )

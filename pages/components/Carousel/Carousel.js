@@ -8,24 +8,24 @@ export default function InicioCarousel(){
         fade={true} 
         controls={false}
       >
-        <Carousel.Item interval={20000}>
+        <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/bkg_aniversario.jpg"
+            src="/images/fondo-aniversario-sesenta-imcyc.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
         <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/bkg_aniversario.jpg"
+            src="/images/bkg11.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
         <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/bkg4.jpg"
+            src="/images/bkg12.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
