@@ -11,43 +11,43 @@ export default function MenuAbajo() {
       <div className="menuabajo">
         <div className="menuiconos">
         <div className="MenuItem">
-            <Link href="">
+            <Link href="/quienes-somos">
               <PersonCircle />
             </Link>
             <h2>QUIÉNES SOMOS</h2>
           </div>
           <div className="MenuItem">
-            <Link href="">
+            <Link href="/gerencia-imcyc">
               <Bricks />
             </Link>
             <h2>GERENCIA TÉCNICA</h2>
           </div>
           <div className="MenuItem">
-            <Link href="">
+            <Link href="/cursos">
               <Building />
             </Link>
             <h2>CURSOS</h2>
           </div>
           <div className="MenuItem">
-            <Link href="">
+            <Link href="/directorio">
               <Calendar2Event />
             </Link>
             <h2>EVENTOS</h2>
           </div>
           <div className="MenuItem">
-            <Link href="">
+            <Link href="/certificaciones">
               <Journal />
             </Link>
             <h2>CERTIFICACIONES</h2>
           </div>
           <div className="MenuItem">
-            <Link href="">
+            <Link href="/membresias">
               <PersonBoundingBox />
             </Link>
             <h2>OCP</h2>
           </div>
           <div className="MenuItem">
-            <Link href="">
+            <Link href="/biblioteca">
               <Book />
             </Link>
             <h2>BIBLIOTECA</h2>

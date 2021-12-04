@@ -27,6 +27,20 @@ export default function InicioCarousel(){
           />
           
         </Carousel.Item>
+        <Carousel.Item interval={4000}>
+          <img
+            className="d-block w-100 min-vh-100"
+            src="/images/bkg15.jpg"
+            alt="Third slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={4000}>
+          <img
+            className="d-block w-100 min-vh-100"
+            src="/images/bkg16.jpg"
+            alt="Third slide"
+          />
+        </Carousel.Item>
       </Carousel>
       <style jsx>{`
           .carousel {
