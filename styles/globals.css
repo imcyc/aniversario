@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;800&family=Lora:wght@400;700&family=Poppins:wght@100;900&family=Titillium+Web:wght@200;300;900&display=swap');
 
 body {
   margin: 0;
   background: #111;
   background: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 code {
@@ -39,16 +39,17 @@ code {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 10px;
+  padding: 10px 40px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #333;
+  color: #fff;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-right: 3px;
   transition: all 1s;
-  color: #333;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 100;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -60,10 +61,11 @@ code {
 }
 
 form.buscador input {
-  border: none;
-  background: rgba(0,0,0,0.8);
-  font-size: 0.8rem;
-  color: #fff !important;
+  background: rgba(0,0,0,0.9);
+  font-size: 1rem;
+  color: #333 !important;
+  border: 2px solid #333;
+  border-radius: 50px !important;
 }
 
 .entrada {
@@ -323,4 +325,30 @@ form.buscador input {
   font-size: 1rem;
   padding: 5px;
   background: #dedede;
+}
+
+.menuabajo {
+  position: fixed;
+  bottom: 0 !important;
+  width: 100%;
+  padding: 20px;
+}
+
+.menuabajo .menuiconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuabajo .menuiconos .MenuItem {
+  margin: 10px;
+}
+
+.menuabajo .menuiconos svg {
+  font-size: 2.5rem;
+}
+
+.entrada .MenuItem h2 {
+  font-size: 1rem;
+  padding: 10px;
 }

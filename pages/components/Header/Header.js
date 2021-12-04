@@ -10,13 +10,15 @@ export default function Header(){
         <Navbar expand="lg">
           <Navbar.Brand>
             <Link href="/">
-              <img src="/logo.svg" alt="" title="" style={{'width':'8em'}} />
+              <img src="/logo-blanco.svg" alt="" title="" style={{'width':'8em'}} />
             </Link>
           </Navbar.Brand>
+          
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/quienes-somos">Quiénes Somos</Nav.Link>
+              <Nav.Link href="/quienes-somos"></Nav.Link>
+              {/* 
               <Nav.Link href="/cursos">Cursos</Nav.Link>
               <Nav.Link href="/gerencia-imcyc">Gerencia Técnica</Nav.Link>
               <Nav.Link href="/historia">Historia</Nav.Link>
@@ -24,11 +26,13 @@ export default function Header(){
               <Nav.Link href="/directorio">Directorio</Nav.Link>
               <Nav.Link href="/tienda-imcyc">Tienda</Nav.Link>
               <Nav.Link href="/ubicacion">Ubicación</Nav.Link>
+              */}
             </Nav>
             <Form className="buscador" inline="true">
               <FormControl type="text" placeholder="BUSCAR" className="mr-sm-2" />
             </Form>
           </Navbar.Collapse>
+          
         </Navbar>
         <style jsx>{`
           .navbar {

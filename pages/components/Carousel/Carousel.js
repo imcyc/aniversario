@@ -9,25 +9,23 @@ export default function InicioCarousel(){
         controls={false}
       >
         <Carousel.Item interval={4000}>
+          {/* 
+          <h1 style={{
+            'position':'fixed',
+            'fontWeight':'bold',
+            'color':'#fff',
+            'top':'10%',
+            'padding': '10px 45px',
+            'fontSize':'7rem',
+            'lineHeight':'6rem'
+          }}>Compartiendo<br/>el Conocimiento</h1>
+          */}
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/fondo-aniversario-sesenta-imcyc.jpg"
+            src="/images/bkg14.jpg"
             alt="Third slide"
           />
-        </Carousel.Item>
-        <Carousel.Item interval={4000}>
-          <img
-            className="d-block w-100 min-vh-100"
-            src="/images/bkg11.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item interval={4000}>
-          <img
-            className="d-block w-100 min-vh-100"
-            src="/images/bkg12.jpg"
-            alt="Third slide"
-          />
+          
         </Carousel.Item>
       </Carousel>
       <style jsx>{`
