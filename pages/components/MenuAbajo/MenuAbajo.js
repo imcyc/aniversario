@@ -47,7 +47,7 @@ export default function MenuAbajo() {
             <h2>OCP</h2>
           </div>
           <div className="MenuItem">
-            <Link href="/biblioteca">
+            <Link href="/tienda-imcyc">
               <Book />
             </Link>
             <h2>BIBLIOTECA</h2>
