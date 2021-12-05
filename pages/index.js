@@ -3,7 +3,6 @@ import Link from "next/dist/client/link";
 import { motion } from "framer-motion";
 import InicioCarousel from "./components/Carousel/Carousel";
 import ItemCarousel from "./components/ItemCarousel/ItemCarousel";
-import MenuAbajo from "./components/MenuAbajo/MenuAbajo";
 
 export default function Home() {
   return (
@@ -24,7 +23,6 @@ export default function Home() {
           */}
         </motion.div>
         {/*<ItemCarousel/>*/}
-        <MenuAbajo />
       </div>
     </Layout>
   )

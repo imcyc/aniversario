@@ -1,9 +1,5 @@
 import Link from 'next/link';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav'
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import { Binoculars, Bricks, Building, Calendar2Event, Journal, PersonBoundingBox, Book, Cart2, PersonCircle } from 'react-bootstrap-icons';
+import { Bricks, Building, Calendar2Event, Journal, PersonBoundingBox, Book, Cart2, PersonCircle } from 'react-bootstrap-icons';
 
 export default function MenuAbajo() {
   return (
@@ -19,7 +15,7 @@ export default function MenuAbajo() {
             </Link>
           </div>
           <div className="MenuItem">
-            <Link href="/gerencia-imcyc">
+            <Link href="/gerencia-tecnica">
               <a>
                 <Bricks />
                 <h2>GERENCIA TÉCNICA</h2>
