@@ -19,13 +19,13 @@ export default function HeaderGerencia(){
             <Nav className="mr-auto">
               <Nav.Link href="/quienes-somos"></Nav.Link>
               
-              <Nav.Link href="/cursos" style={{'color':'#333'}}>Concreto</Nav.Link>
-              <Nav.Link href="/gerencia-imcyc">Cemento</Nav.Link>
-              <Nav.Link href="/historia">Metrología</Nav.Link>
-              <Nav.Link href="/membresias">Asesorías Técnicas</Nav.Link>
-              <Nav.Link href="/directorio">Sistemas de calidad</Nav.Link>
-              <Nav.Link href="/tienda-imcyc">Ensayos de aptitud</Nav.Link>
-              <Nav.Link href="/ubicacion">OCP</Nav.Link>
+              <Nav.Link href="/gerencia-tecnica/concreto" style={{'color':'#333'}}>Concreto</Nav.Link>
+              <Nav.Link href="/gerencia-tecnica/cemento">Cemento</Nav.Link>
+              <Nav.Link href="/gerencia-tecnica/metrologia">Metrología</Nav.Link>
+              <Nav.Link href="/gerencia-tecnica/asesorias-tecnicas">Asesorías Técnicas</Nav.Link>
+              <Nav.Link href="/gerencia-tecnica/sistemas-de-calidad">Sistemas de calidad</Nav.Link>
+              <Nav.Link href="/gerencia-tecnica/ensayos de aptitud">Ensayos de aptitud</Nav.Link>
+              <Nav.Link href="/gerencia-tecnica/ocp">OCP</Nav.Link>
               
             </Nav>
             <Form className="buscador" inline="true">

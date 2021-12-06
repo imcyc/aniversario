@@ -26,7 +26,7 @@ export default function Layout({children}) {
       </Head>
       
       <Header />
-      {router.route == "/gerencia-tecnica" && <HeaderGerencia/>}
+      {router.route == "/gerencia-tecnica" || "/gerencia-tecnica/[tipo]"  && <HeaderGerencia/>}
 
       <motion.main
         variants={variants} // Pass the variant object into Framer Motion 
