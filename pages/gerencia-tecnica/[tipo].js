@@ -7,7 +7,7 @@ export default function Tipo(){
     return(
         <Layout>
             <div className="gerencia">
-                <h2>{tipo}</h2>
+                <h2 style={{'textTransform':'uppercase'}}>{tipo}</h2>
             </div>
         </Layout>
     )
