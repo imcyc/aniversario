@@ -15,18 +15,18 @@ export default function MenuAbajo() {
             </Link>
           </div>
           <div className="MenuItem">
-            <Link href="/gerencia-tecnica">
-              <a>
-                <Bricks />
-                <h2>GERENCIA TÉCNICA</h2>
-              </a>
-            </Link>
-          </div>
-          <div className="MenuItem">
             <Link href="/cursos">
               <a>
                 <Building />
                 <h2>CURSOS</h2>
+              </a>
+            </Link>
+          </div>
+          <div className="MenuItem">
+            <Link href="/gerencia-tecnica">
+              <a>
+                <Bricks />
+                <h2>GERENCIA TÉCNICA</h2>
               </a>
             </Link>
           </div>
