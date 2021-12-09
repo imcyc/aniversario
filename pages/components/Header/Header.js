@@ -12,6 +12,9 @@ export default function Header(){
             <Link href="/">
               <img src="/logo-blanco.svg" alt="" title="" style={{'width':'8em'}} />
             </Link>
+            <Link href="/">
+              <img src="/logo15aniversario.svg" alt="" title="" style={{'width':'8em'}} />
+            </Link>
           </Navbar.Brand>
           
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

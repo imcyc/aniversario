@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import { Binoculars, Bricks, Building, Calendar2Event, Journal, PersonBoundingBox, Book, Cart2, PersonCircle } from 'react-bootstrap-icons';
 
-export default function MenuAbajo() {
+export default function MenuIzquierdo() {
   return (
     <>
       <div className="menuabajo">
