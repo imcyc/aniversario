@@ -4,6 +4,7 @@ import Tab from 'react-bootstrap/Tab';
 import Nav from 'react-bootstrap/Nav';
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRight } from "react-bootstrap-icons";
+import MenuAbajo from "./components/MenuAbajo/MenuAbajo";
 
 const VIDEO_WIDTH = 1920;
 const VIDEO_HEIGHT = 1080;
@@ -106,6 +107,7 @@ export default function QuienesSomos() {
                     </Tab.Container>
                 </Row>
             </Container>
+            <MenuAbajo />
             <style jsx>{`
                 p {
                     text-align: justify;
