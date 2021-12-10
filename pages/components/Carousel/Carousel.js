@@ -10,17 +10,6 @@ export default function InicioCarousel(){
       >
         <Carousel.Item interval={4000}>
           <video id='background-video' autoPlay loop muted>
-            <source src='/videos/video6.mp4' type='/video/mp4' />
-            <source src='/videos/video6.mp4' type="video/ogg" /> 
-          </video>
-          <img
-            className="d-block w-100 min-vh-100"
-            src="/images/bkg_ubicacion.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item interval={4000}>
-          <video id='background-video' autoPlay loop muted>
             <source src='/videos/video5.mp4' type='/video/mp4' />
             <source src='/videos/video5.mp4' type="video/ogg" /> 
           </video>
@@ -39,7 +28,7 @@ export default function InicioCarousel(){
             <source src='/videos/video8.mp4' type="video/ogg" /> 
           </video>
           <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
-          <h2 className="videobanner">Cursos</h2>
+          <h2 className="videobanner">Cursos y Certificaciones</h2>
           
           <img
             className="d-block w-100 min-vh-100"
