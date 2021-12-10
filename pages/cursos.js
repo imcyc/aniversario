@@ -65,7 +65,18 @@ export default function cursos({ reasons }) {
           </Col>
           <Col sm={9}>
           <hr/>
-            <h3>ENERO 2021</h3>
+            <h3>ENERO 2022</h3>
+            <Carousel
+              responsive={responsive}
+            >
+              {reasons
+                .slice(0, reasons.length - 1)
+                .map(({ title, description, autor, precio, imagen }, i) => (
+                  <div key={i} className="card net"><h1>{title}</h1></div>
+                ))}
+            </Carousel>
+            <hr/>
+            <h3>FEBRERO 2022</h3>
             <Carousel
               responsive={responsive}>
               {reasons
@@ -76,18 +87,7 @@ export default function cursos({ reasons }) {
                 ))}
             </Carousel>
             <hr/>
-            <h3>FEBRERO 2021</h3>
-            <Carousel
-              responsive={responsive}>
-              {reasons
-                .slice(0, reasons.length - 1)
-                .map(({ title, description, autor, precio, imagen }, i) => (
-
-                  <div className="card net"><h1>{title}</h1></div>
-                ))}
-            </Carousel>
-            <hr/>
-            <h3>MARZO 2021</h3>
+            <h3>MARZO 2022</h3>
             <Carousel
               responsive={responsive}>
               {reasons
