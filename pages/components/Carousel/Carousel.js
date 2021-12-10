@@ -9,25 +9,34 @@ export default function InicioCarousel(){
         controls={false}
       >
         <Carousel.Item interval={4000}>
+          <h2 style={{
+            'position':'fixed',
+            'fontWeight':'100',
+            'color':'#fff',
+            'top':'30%',
+            'fontSize':'3rem',
+            'lineHeight':'3rem',
+            'width':'100%',
+            'textAlign':'center'
+          }}>Instituto Mexicano del Cemento y del Concreto A.C.</h2>
+          <img
+            className="d-block w-100 min-vh-100"
+            src="/images/bkg_ubicacion.jpg"
+            alt="Third slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={4000}>
           {/* 
           <h1 style={{
             'position':'fixed',
-            'fontWeight':'bold',
+            'fontWeight':'100',
             'color':'#fff',
-            'top':'10%',
+            'top':'35%',
             'padding': '10px 45px',
             'fontSize':'7rem',
             'lineHeight':'6rem'
           }}>Compartiendo<br/>el Conocimiento</h1>
           */}
-          <img
-            className="d-block w-100 min-vh-100"
-            src="/images/bkg14.jpg"
-            alt="Third slide"
-          />
-          
-        </Carousel.Item>
-        <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 min-vh-100"
             src="/images/bkg15.jpg"
