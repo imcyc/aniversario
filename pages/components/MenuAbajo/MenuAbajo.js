@@ -47,7 +47,7 @@ export default function MenuAbajo() {
             </Link>
           </div>
           <div className="MenuItem">
-            <Link href="/membresias">
+            <Link href="/ocp">
               <a>
                 <PersonBoundingBox />
                 <h2>OCP</h2>

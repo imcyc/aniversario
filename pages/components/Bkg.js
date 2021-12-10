@@ -6,7 +6,7 @@ export default function Bkg({imgx, flexer, children}){
       fluid="true" 
       className="bkgfull" 
       style={{
-        'background': `url(${imgx}) no-repeat center center fixed`,
+        'background': `url(${imgx}) center center`,
         'flexDirection': flexer === 'column' ? 'column' : ''
       }}
     >
