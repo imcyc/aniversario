@@ -26,15 +26,17 @@ export default function directorio(){
   return(
     <LayoutCursos>
       <div className="net">
-        <h1>EVENTOS IMCYC</h1>
+        <h2 className="dirtit">EVENTOS IMCYC</h2>
         <Carousel
           responsive={responsive}>
-            <div className="card net"><h1>HOLA</h1></div>
+            <div className="card net">
+              aaaa
+            </div>
             <div className="card net"><h1>HOLA</h1></div>
             <div className="card net"><h1>HOLA</h1></div>
             <div className="card net"><h1>HOLA</h1></div>
         </Carousel>
-        <h1>EVENTOS IMCYC</h1>
+        <h2 className="dirtit">EVENTOS IMCYC</h2>
         <Carousel
           responsive={responsive}>
             <div className="card net"><h1>HOLA</h1></div>

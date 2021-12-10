@@ -450,6 +450,22 @@ h3.videobanner.especial {
   box-shadow: 0 5px 15px #f2f2f2;
   margin: 10px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.tienda .card.net {
+  margin: 10px;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2.dirtit {
+  padding: 0 8px;
+  margin-top: 50px;
 }
 
 @media (max-width: 1024px) {

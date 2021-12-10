@@ -7,20 +7,41 @@ import { getWhyNextReasons } from "../lib/apiCursos";
 import { UseEntries } from '../lib/swr-hooks';
 import { Container, Row, Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
+import Carousel from "react-multi-carousel";
 
-export default function cursos({ reasons }){
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
+
+export default function cursos({ reasons }) {
   const { entries, isLoading } = UseEntries();
 
-  if(isLoading){
-    return <Loader/>;
+  if (isLoading) {
+    return <Loader />;
   };
 
-  return(
+  return (
     <LayoutCursos>
       <Container className="tienda">
         <Row>
           <Col sm={3} className="filtros">
-          <Form>
+            <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Buscar por fecha:</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
@@ -42,27 +63,40 @@ export default function cursos({ reasons }){
               </Button>
             </Form>
           </Col>
-          <Col>
-          <Row>
-            {reasons
-              .slice(0, reasons.length - 1)
-              .map(({ title, description, autor, precio, imagen }, i) => (
-                <Col key={i} sm={6}>
-                  <CardProducto 
-                    titulo={title}
-                    descripcion={description}
-                    autor={autor}
-                    precio={precio}
-                    imagen={imagen}
-                  />
-                </Col>
-              ))}
-          </Row>
-          {/*entries.map((producto) => (
-            <div key={producto.id} className="d-flex flex-column">
-              <h2>{producto.name}</h2>
-            </div>
-          ))*/}
+          <Col sm={9}>
+          <hr/>
+            <h3>ENERO 2021</h3>
+            <Carousel
+              responsive={responsive}>
+              {reasons
+                .slice(0, reasons.length - 1)
+                .map(({ title, description, autor, precio, imagen }, i) => (
+
+                  <div className="card net"><h1>{title}</h1></div>
+                ))}
+            </Carousel>
+            <hr/>
+            <h3>FEBRERO 2021</h3>
+            <Carousel
+              responsive={responsive}>
+              {reasons
+                .slice(0, reasons.length - 1)
+                .map(({ title, description, autor, precio, imagen }, i) => (
+
+                  <div className="card net"><h1>{title}</h1></div>
+                ))}
+            </Carousel>
+            <hr/>
+            <h3>MARZO 2021</h3>
+            <Carousel
+              responsive={responsive}>
+              {reasons
+                .slice(0, reasons.length - 1)
+                .map(({ title, description, autor, precio, imagen }, i) => (
+
+                  <div className="card net"><h1>{title}</h1></div>
+                ))}
+            </Carousel>
           </Col>
         </Row>
       </Container>
