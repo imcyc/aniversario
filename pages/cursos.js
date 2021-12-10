@@ -82,8 +82,7 @@ export default function cursos({ reasons }) {
               {reasons
                 .slice(0, reasons.length - 1)
                 .map(({ title, description, autor, precio, imagen }, i) => (
-
-                  <div className="card net"><h1>{title}</h1></div>
+                  <div key={i} className="card net"><h1>{title}</h1></div>
                 ))}
             </Carousel>
             <hr/>
@@ -93,8 +92,7 @@ export default function cursos({ reasons }) {
               {reasons
                 .slice(0, reasons.length - 1)
                 .map(({ title, description, autor, precio, imagen }, i) => (
-
-                  <div className="card net"><h1>{title}</h1></div>
+                  <div key={i} className="card net"><h1>{title}</h1></div>
                 ))}
             </Carousel>
           </Col>
