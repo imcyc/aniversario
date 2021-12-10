@@ -440,6 +440,18 @@ h3.videobanner.especial {
   font-weight: bold;
 }
 
+.net {
+  display: block;
+  margin: 90px 25px;
+}
+
+.net .card.net{
+  min-height: 200px;
+  box-shadow: 0 5px 15px #f2f2f2;
+  margin: 10px;
+  border: none;
+}
+
 @media (max-width: 1024px) {
   h3 {
     font-size: 1rem;
