@@ -1,19 +1,17 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
-import Header from './Header/Header';
-import HeaderGerencia from './Header/HeaderGerencia';
+import HeaderCursos from './Header/HeaderCursos';
 import Footer from './Footer/Footer';
 import { motion } from "framer-motion";
 import MenuAbajo from './MenuAbajo/MenuAbajo';
 
 const variants = {
-  hidden: { opacity: 0, x: 0, y: -100 },
+  hidden: { opacity: 0, x: -100, y: 0 },
   enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 0, y: 100 },
+  exit: { opacity: 0, x: 100, y: 0 },
 }
 
-export default function Layout({children}) {
+export default function LayoutCursos({children}) {
   const router = useRouter();
   return (
     <div>
@@ -23,11 +21,8 @@ export default function Layout({children}) {
         <link rel="shortcut icon" href="/favicon.png" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Oswald:wght@200;700&display=swap" rel="stylesheet" />
       </Head>
-      
-      
-      {router.route == "/gerencia-tecnica" ? <HeaderGerencia/> : <Header />}
-      {router.route == "/gerencia-tecnica/[tipo]" && <HeaderGerencia/>}
-      {router.route == "/cursos" && <HeaderGerencia/>}
+
+      <HeaderCursos/>
 
       <motion.main
         variants={variants} // Pass the variant object into Framer Motion 

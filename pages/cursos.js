@@ -1,4 +1,4 @@
-import LayoutTienda from "./components/LayoutTienda";
+import LayoutCursos from "./components/LayoutCursos";
 import Bkg from "./components/Bkg";
 import Form from 'react-bootstrap/Form';
 import CardProducto from "./components//CardProducto/CardProducto";
@@ -16,7 +16,7 @@ export default function cursos({ reasons }){
   };
 
   return(
-    <LayoutTienda>
+    <LayoutCursos>
       <Container className="tienda">
         <Row>
           <Col sm={3} className="filtros">
@@ -66,7 +66,7 @@ export default function cursos({ reasons }){
           </Col>
         </Row>
       </Container>
-    </LayoutTienda>
+    </LayoutCursos>
   )
 }
 

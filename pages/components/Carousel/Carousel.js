@@ -9,16 +9,10 @@ export default function InicioCarousel(){
         controls={false}
       >
         <Carousel.Item interval={4000}>
-          <h2 style={{
-            'position':'fixed',
-            'fontWeight':'100',
-            'color':'#fff',
-            'top':'30%',
-            'fontSize':'3rem',
-            'lineHeight':'3rem',
-            'width':'100%',
-            'textAlign':'center'
-          }}>Instituto Mexicano del Cemento y del Concreto A.C.</h2>
+          <video id='background-video' autoPlay loop muted>
+            <source src='/videos/video6.mp4' type='/video/mp4' />
+            <source src='/videos/video6.mp4' type="video/ogg" /> 
+          </video>
           <img
             className="d-block w-100 min-vh-100"
             src="/images/bkg_ubicacion.jpg"
@@ -26,17 +20,13 @@ export default function InicioCarousel(){
           />
         </Carousel.Item>
         <Carousel.Item interval={4000}>
-          {/* 
-          <h1 style={{
-            'position':'fixed',
-            'fontWeight':'100',
-            'color':'#fff',
-            'top':'35%',
-            'padding': '10px 45px',
-            'fontSize':'7rem',
-            'lineHeight':'6rem'
-          }}>Compartiendo<br/>el Conocimiento</h1>
-          */}
+          <video id='background-video' autoPlay loop muted>
+            <source src='/videos/video5.mp4' type='/video/mp4' />
+            <source src='/videos/video5.mp4' type="video/ogg" /> 
+          </video>
+          <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
+          <h2 className="videobanner">Gerencia Técnica</h2>
+          
           <img
             className="d-block w-100 min-vh-100"
             src="/images/bkg15.jpg"
@@ -44,6 +34,13 @@ export default function InicioCarousel(){
           />
         </Carousel.Item>
         <Carousel.Item interval={4000}>
+          <video id='background-video' autoPlay loop muted>
+            <source src='/videos/video8.mp4' type='/video/mp4' />
+            <source src='/videos/video8.mp4' type="video/ogg" /> 
+          </video>
+          <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
+          <h2 className="videobanner">Cursos</h2>
+          
           <img
             className="d-block w-100 min-vh-100"
             src="/images/bkg16.jpg"
@@ -51,6 +48,9 @@ export default function InicioCarousel(){
           />
         </Carousel.Item>
         <Carousel.Item interval={4000}>
+          <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
+          <h2 className="videobanner">Eventos</h2>
+          
           <img
             className="d-block w-100 min-vh-100"
             src="/images/bkg17.jpg"
@@ -58,6 +58,9 @@ export default function InicioCarousel(){
           />
         </Carousel.Item>
         <Carousel.Item interval={4000}>
+          <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
+          <h2 className="videobanner">Certificación de productos</h2>
+          
           <img
             className="d-block w-100 min-vh-100"
             src="/images/bkg18.jpg"

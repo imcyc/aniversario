@@ -4,7 +4,7 @@ body {
   margin: 0;
   background: #111;
   background: #fff;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 code {
@@ -39,7 +39,7 @@ code {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 10px 40px;
+  padding: 10px 20px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -153,7 +153,9 @@ form.buscador input {
 
 .tab-content>.active {
   /*background: rgba(0,0,0,0.8);*/
-  padding: 80px;
+  padding: 80px 30px;
+  position: absolute;
+  top: 0;
 }
 
 :root {
@@ -381,8 +383,80 @@ form.buscador input {
 
 .gerencia {
   height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.gerencia .container {
+  z-index: 10;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.gerencia .container h1 {
+  font-weight: bold;
+  color: #fff;
+}
+
+.gerencia .container p {
+  color: #fff;
+  /*background: rgba(0,0,0,0.4);*/
+  padding: 20px;
+  font-weight: 100;
+}
+
+h2.videobanner {
+  position:fixed;
+  font-weight:900;
+  color:#fff;
+  top:47%;
+  font-size:3rem;
+  line-height:3rem;
+  width:100%;
+  text-align:center;
+  z-index: 200000;
+  text-transform: uppercase;
+}
+
+h3.videobanner {
+  position:fixed;
+  font-weight:100;
+  color:#fff;
+  top:40%;
+  font-size:2rem;
+  line-height:2rem;
+  width:100%;
+  text-align:center;
+  z-index: 200000;
+  text-transform: uppercase;
+}
+
+h3.videobanner.especial {
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  
+}
+
+@media (max-width: 1300px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 0.7rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .nav-pills .nav-link {
+    font-size: 0.5rem;
+  }
 }

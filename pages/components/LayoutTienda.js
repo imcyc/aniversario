@@ -1,8 +1,11 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import { motion } from "framer-motion";
+import HeaderGerencia from './Header/HeaderGerencia';
+import MenuAbajo from './MenuAbajo/MenuAbajo';
 
 const variants = {
   hidden: { opacity: 0, x: -100, y: 0 },
@@ -11,6 +14,7 @@ const variants = {
 }
 
 export default function LayoutTienda({children}) {
+  const router = useRouter();
   return (
     <div>
       <Head>
@@ -21,6 +25,7 @@ export default function LayoutTienda({children}) {
       </Head>
 
       <Header />
+      {router.route == "/cursos" && <HeaderGerencia/>}
 
       <motion.main
         variants={variants} // Pass the variant object into Framer Motion 
@@ -36,6 +41,8 @@ export default function LayoutTienda({children}) {
       >
         {children}
       </motion.main>
+
+      <MenuAbajo />
 
       <Footer />
 

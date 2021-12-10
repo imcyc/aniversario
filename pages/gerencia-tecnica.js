@@ -5,6 +5,10 @@ import { Container, Row, Col } from "react-bootstrap";
 export default function gerenciaImcyc(){
   return(
     <Layout>
+      <video id='background-video' autoPlay loop muted>
+        <source src='/videos/video8.mp4' type='/video/mp4' />
+        <source src='/videos/video8.mp4' type="video/ogg" /> 
+      </video>
       <div className="gerencia">
         <Container>
           <Row>
@@ -15,15 +19,6 @@ export default function gerenciaImcyc(){
             </Col>
           </Row>
         </Container>
-        
-        <div>
-          <video id='background-video' autoPlay loop muted>
-            <source src='/videos/video1.mp4' type='/video/mp4' />
-            <source src='/videos/video1.mp4' type="video/ogg" /> 
-          </video>
-        </div>
-        
-        
       </div>
     </Layout>
   )

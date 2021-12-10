@@ -7,13 +7,7 @@ import ItemCarousel from "./components/ItemCarousel/ItemCarousel";
 export default function Home() {
   return (
     <Layout>
-      {/*<InicioCarousel/>*/}
-      <div>
-          <video id='background-video' autoPlay loop muted>
-            <source src='/videos/video9.mp4' type='/video/mp4' />
-            <source src='/videos/video9.mp4' type="video/ogg" /> 
-          </video>
-        </div>
+      <InicioCarousel/>
       <div className="entrada text-center">
         <motion.div
           animate={{ opacity: [0, 1] }}
