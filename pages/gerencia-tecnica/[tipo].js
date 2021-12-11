@@ -9,7 +9,6 @@ export default function Tipo(){
     if(tipo){
         titulo = tipo.replace("-", " ");
     }
-
     const sectores = [
         {
             'categoria': 'concreto',
@@ -19,7 +18,6 @@ export default function Tipo(){
             'determinacion': 'DETERMINACIÓN DE PROPIEDADES FÍSICAS DE AGREGADOS (NMX-C-030-ONNCCE-2004, NMX-C-073-ONNCCE-2004, NMX-C-077-1997-ONNCCE, NMX-C-084-ONNCCE-2006, NMX-C-088-1997-ONNCCE, NMX-C-164-ONNCCE-2002, NMX-C-165-ONNCCE-2004, NMX-C-166-ONNCCE-2006, NMX-C-170-1997-ONNCCE)'
         }
     ]
-
     return(
         <Layout>
             <Container>
