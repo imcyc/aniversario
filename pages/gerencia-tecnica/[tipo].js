@@ -23,10 +23,11 @@ export default function Tipo(){
             <Container>
                 <Col className="gerencia">
                     <Row>
-                        <h2 style={{'textTransform':'uppercase'}}>{titulo}</h2>
+                        
                     </Row>
-                    <Row>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit tristique ligula, sit amet finibus nisi pulvinar sed. Nam nec quam magna. Maecenas vitae posuere risus. Praesent ut augue vestibulum, convallis purus ac, feugiat neque. Sed sit amet posuere neque. Donec at felis convallis ipsum mollis faucibus eu ut est. Maecenas eget euismod dui. Suspendisse eu mi nisl. Sed vitae est enim. Vestibulum tristique auctor ipsum a iaculis. Nunc luctus mauris erat, at posuere dolor gravida eu.</p>
+                    <Row className="text-left">
+                        <h2 style={{'textTransform':'uppercase'}}>{titulo}</h2>
+                        <p className="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit tristique ligula, sit amet finibus nisi pulvinar sed. Nam nec quam magna. Maecenas vitae posuere risus. Praesent ut augue vestibulum, convallis purus ac, feugiat neque. Sed sit amet posuere neque. Donec at felis convallis ipsum mollis faucibus eu ut est. Maecenas eget euismod dui. Suspendisse eu mi nisl. Sed vitae est enim. Vestibulum tristique auctor ipsum a iaculis. Nunc luctus mauris erat, at posuere dolor gravida eu.</p>
                     </Row>
                 </Col>
             </Container>

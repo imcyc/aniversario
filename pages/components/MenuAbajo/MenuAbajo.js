@@ -1,7 +1,14 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { Bricks, Building, Calendar2Event, Journal, PersonBoundingBox, Book, Cart2, PersonCircle } from 'react-bootstrap-icons';
 
 export default function MenuAbajo() {
+  const router = useRouter();
+  console.log(router);
+  let menucolor = "#fff";
+  if(router.pathname === "/gerencia-tecnica/[tipo]"){
+    menucolor = "#333"
+  }
   return (
     <>
       <div className="menuabajo">
@@ -9,64 +16,64 @@ export default function MenuAbajo() {
         <div className="MenuItem">
             <Link href="/quienes-somos">
               <a>
-                <PersonCircle />
-                <h2>QUIÉNES SOMOS</h2>
+                <PersonCircle color={menucolor} />
+                <h2 style={{'color': menucolor}}>QUIÉNES SOMOS</h2>
               </a>
             </Link>
           </div>
           <div className="MenuItem">
             <Link href="/cursos">
               <a>
-                <Building />
-                <h2>CURSOS</h2>
+                <Building color={menucolor} />
+                <h2 style={{'color': menucolor}}>CURSOS</h2>
               </a>
             </Link>
           </div>
           <div className="MenuItem">
             <Link href="/gerencia-tecnica">
               <a>
-                <Bricks />
-                <h2>GERENCIA TÉCNICA</h2>
+                <Bricks color={menucolor} />
+                <h2 style={{'color': menucolor}}>GERENCIA TÉCNICA</h2>
               </a>
             </Link>
           </div>
           <div className="MenuItem">
             <Link href="/directorio">
               <a>
-                <Calendar2Event />
-                <h2>EVENTOS</h2>
+                <Calendar2Event color={menucolor} />
+                <h2 style={{'color': menucolor}}>EVENTOS</h2>
               </a>
             </Link>
           </div>
           <div className="MenuItem">
             <Link href="/certificaciones">
               <a>
-                <Journal />
-                <h2>CERTIFICACIONES</h2>
+                <Journal color={menucolor} />
+                <h2 style={{'color': menucolor}}>CERTIFICACIONES</h2>
               </a>
             </Link>
           </div>
           <div className="MenuItem">
             <Link href="/ocp">
               <a>
-                <PersonBoundingBox />
-                <h2>OCP</h2>
+                <PersonBoundingBox color={menucolor} />
+                <h2 style={{'color': menucolor}}>OCP</h2>
               </a>
             </Link>
           </div>
           <div className="MenuItem">
             <Link href="/tienda-imcyc">
               <a>
-                <Book />
-                <h2>BIBLIOTECA</h2>
+                <Book color={menucolor} />
+                <h2 style={{'color': menucolor}}>BIBLIOTECA</h2>
               </a>
             </Link>
           </div>
           <div className="MenuItem">
             <Link href="/tienda-imcyc">
               <a>
-                <Cart2 />
-                <h2>TIENDA</h2>
+                <Cart2 color={menucolor} />
+                <h2 style={{'color': menucolor}}>TIENDA</h2>
               </a>
             </Link>
           </div>
