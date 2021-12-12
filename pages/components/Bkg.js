@@ -10,7 +10,6 @@ export default function Bkg({imgx, flexer, children}){
         'flexDirection': flexer === 'column' ? 'column' : ''
       }}
     >
-      
       {children}
     </Container>
   )
