@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Header from './Header/Header';
 import HeaderGerencia from './Header/HeaderGerencia';
+import HeaderOcp from './Header/HeaderOcp';
 import Footer from './Footer/Footer';
 import { motion } from "framer-motion";
 import MenuAbajo from './MenuAbajo/MenuAbajo';
@@ -28,6 +29,7 @@ export default function Layout({children}) {
       {router.route == "/gerencia-tecnica" ? <HeaderGerencia/> : <Header />}
       {router.route == "/gerencia-tecnica/[tipo]" && <HeaderGerencia/>}
       {router.route == "/cursos" && <HeaderGerencia/>}
+      {router.route == "/ocp" && <HeaderOcp/>}
 
       <motion.main
         variants={variants} // Pass the variant object into Framer Motion 
