@@ -1,17 +1,29 @@
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Bricks, Building, Calendar2Event, Journal, PersonBoundingBox, Book, Cart2, PersonCircle } from 'react-bootstrap-icons';
 
 export default function MenuAbajo() {
   const router = useRouter();
-  console.log(router);
+  const [abajo, setAbajo] = useState('block');
+  useEffect(() => {
+    window.onscroll = function(ev) {
+      if (bottom) {
+        setAbajo('none');
+      } else {
+        setAbajo('block');
+      }
+    };
+  })
+  
   let menucolor = "#fff";
   if(router.pathname === "/gerencia-tecnica/[tipo]" || router.pathname === "/cursos"){
     menucolor = "#333"
   }
+  console.log(abajo);
   return (
     <>
-      <div className="menuabajo">
+      <div className="menuabajo" style={{'display': abajo}}>
         <div className="menuiconos">
         <div className="MenuItem">
             <Link href="/quienes-somos">

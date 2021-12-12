@@ -30,7 +30,7 @@ export default function Tipo(){
                         {sectores.filter(tipo => tipo.categoria === titulo).map((tip, i) => (
                             <div key={i}>
                                 <h4>{tip.categoria}</h4>
-                                <h2 style={{'textTransform':'uppercase'}}><BoxArrowRight /> {tip.subcategoria}</h2>
+                                <h2 style={{'textTransform':'uppercase'}}>{tip.subcategoria}</h2>
                                 <p className="text-justify">{tip.descripcion}</p>
                                 <ul>
                                     {tip.lista.map((lit, i) => (
