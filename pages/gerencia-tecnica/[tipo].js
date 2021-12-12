@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import { useRouter } from 'next/router';
 import {Container, Col, Row} from 'react-bootstrap';
+import { BoxArrowRight } from "react-bootstrap-icons";
 
 export default function Tipo(){
     const router = useRouter();
@@ -29,7 +30,7 @@ export default function Tipo(){
                         {sectores.filter(tipo => tipo.categoria === titulo).map((tip, i) => (
                             <>
                                 <h4>{tip.categoria}</h4>
-                                <h2 style={{'textTransform':'uppercase'}}>{tip.subcategoria}</h2>
+                                <h2 style={{'textTransform':'uppercase'}}><BoxArrowRight /> {tip.subcategoria}</h2>
                                 <p className="text-justify">{tip.descripcion}</p>
                             </>
                         ))}

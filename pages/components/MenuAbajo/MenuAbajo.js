@@ -6,7 +6,7 @@ export default function MenuAbajo() {
   const router = useRouter();
   console.log(router);
   let menucolor = "#fff";
-  if(router.pathname === "/gerencia-tecnica/[tipo]"){
+  if(router.pathname === "/gerencia-tecnica/[tipo]" || router.pathname === "/cursos"){
     menucolor = "#333"
   }
   return (

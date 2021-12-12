@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import LayoutCursos from "./components/LayoutCursos";
 import Bkg from "./components/Bkg";
 import Form from 'react-bootstrap/Form';
@@ -8,6 +9,7 @@ import { UseEntries } from '../lib/swr-hooks';
 import { Container, Row, Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Carousel from "react-multi-carousel";
+import { ArrowRightSquareFill, Calendar2Check, ArrowRightCircleFill } from "react-bootstrap-icons";
 
 const responsive = {
   superLargeDesktop: {
@@ -30,11 +32,18 @@ const responsive = {
 };
 
 export default function cursos({ reasons }) {
+  const [ entradas, setEntradas ] = useState();
   const { entries, isLoading } = UseEntries();
+
+  useEffect(() => {
+    setEntradas(reasons);
+  }, []);
 
   if (isLoading) {
     return <Loader />;
   };
+
+  console.log(entradas);
 
   return (
     <LayoutCursos>
@@ -42,20 +51,21 @@ export default function cursos({ reasons }) {
         <Row>
           <Col sm={3} className="filtros">
             <Form>
+              <hr/>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Buscar por fecha:</Form.Label>
+                <Form.Label><ArrowRightSquareFill /> Buscar por fecha:</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Buscar por tema:</Form.Label>
+                <Form.Label><ArrowRightSquareFill /> Buscar por tema:</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Buscar por profesor:</Form.Label>
+                <Form.Label><ArrowRightSquareFill /> Buscar por profesor:</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Buscar por precio:</Form.Label>
+                <Form.Label><ArrowRightSquareFill /> Buscar por precio:</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
               </Form.Group>
               <Button variant="primary" type="submit" className="w-100">
@@ -65,34 +75,34 @@ export default function cursos({ reasons }) {
           </Col>
           <Col sm={9}>
           <hr/>
-            <h3>ENERO 2022</h3>
+            <h3><ArrowRightCircleFill /> ENERO 2022</h3>
             <Carousel
               responsive={responsive}
             >
-              {reasons
-                .slice(0, reasons.length - 1)
+              {entradas
+                .slice(0, entradas.length - 1)
                 .map(({ title, description, autor, precio, imagen }, i) => (
-                  <div key={i} className="card net"><h1>{title}</h1></div>
+                  <div key={i} className="card net"><h3>{title}</h3></div>
                 ))}
             </Carousel>
             <hr/>
-            <h3>FEBRERO 2022</h3>
+            <h3><ArrowRightCircleFill /> FEBRERO 2022</h3>
             <Carousel
               responsive={responsive}>
-              {reasons
-                .slice(0, reasons.length - 1)
+              {entradas
+                .slice(0, entradas.length - 1)
                 .map(({ title, description, autor, precio, imagen }, i) => (
-                  <div key={i} className="card net"><h1>{title}</h1></div>
+                  <div key={i} className="card net"><h3>{title}</h3></div>
                 ))}
             </Carousel>
             <hr/>
-            <h3>MARZO 2022</h3>
+            <h3><ArrowRightCircleFill /> MARZO 2022</h3>
             <Carousel
               responsive={responsive}>
-              {reasons
-                .slice(0, reasons.length - 1)
+              {entradas
+                .slice(0, entradas.length - 1)
                 .map(({ title, description, autor, precio, imagen }, i) => (
-                  <div key={i} className="card net"><h1>{title}</h1></div>
+                  <div key={i} className="card net"><h3>{title}</h3></div>
                 ))}
             </Carousel>
           </Col>

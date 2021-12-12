@@ -387,8 +387,7 @@ form.buscador input {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  
+  text-align: left;
 }
 
 .gerencia .container {
@@ -461,11 +460,29 @@ h3.videobanner.especial {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 h2.dirtit {
   padding: 0 8px;
   margin-top: 50px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
 }
 
 @media (max-width: 1024px) {
