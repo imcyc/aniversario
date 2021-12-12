@@ -28,11 +28,16 @@ export default function Tipo(){
                     </Row>
                     <Row className="text-left">
                         {sectores.filter(tipo => tipo.categoria === titulo).map((tip, i) => (
-                            <>
+                            <div key={i}>
                                 <h4>{tip.categoria}</h4>
                                 <h2 style={{'textTransform':'uppercase'}}><BoxArrowRight /> {tip.subcategoria}</h2>
                                 <p className="text-justify">{tip.descripcion}</p>
-                            </>
+                                <ul>
+                                    {tip.lista.map((lit, i) => (
+                                        <li key={i}>{lit}</li>
+                                    ))}
+                                </ul>
+                            </div>
                         ))}
                     </Row>
                 </Col>
