@@ -501,6 +501,17 @@ h2.dirtit {
   margin-bottom: 0;
 }
 
+.ocp-layout h2 {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  background: #fff;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
 .ocp-layout p.clausulas {
   text-align: center;
   color: #fff;
