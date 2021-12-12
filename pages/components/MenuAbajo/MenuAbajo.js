@@ -8,6 +8,7 @@ export default function MenuAbajo() {
   const [abajo, setAbajo] = useState('block');
   useEffect(() => {
     window.onscroll = function(ev) {
+      const bottom = window.scrollHeight - window.scrollTop === document.clientHeight;
       if (bottom) {
         setAbajo('none');
       } else {
@@ -17,7 +18,7 @@ export default function MenuAbajo() {
   })
   
   let menucolor = "#fff";
-  if(router.pathname === "/gerencia-tecnica/[tipo]" || router.pathname === "/cursos"){
+  if(router.pathname === "/gerencia-tecnica/[tipo]" || router.pathname === "/cursos" || router.pathname === "/gerencia-tecnica"){
     menucolor = "#333"
   }
   console.log(abajo);
