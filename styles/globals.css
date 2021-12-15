@@ -488,7 +488,7 @@ h2.dirtit {
 .ocp-layout {
   background: #080e2e;
   height: 100vh;
-  padding: 90px 0;
+  padding: 70px 0;
 }
 
 .ocp-layout h1 {
@@ -528,6 +528,11 @@ h2.dirtit {
 
 .ocp-layout .nav-tabs .nav-link {
   border-radius: 0;
+  color: #fff;
+}
+
+.ocp-layout .nav-tabs .nav-link.active {
+  color: #000;
 }
 
 .aniversaio-badges {
@@ -543,6 +548,11 @@ h2.dirtit {
   width: 200px;
   right: 10px;
   bottom: 20px;
+}
+
+.ocp-layout .tab-content>.active {
+  position: relative;
+  background: #fff;
 }
 
 @media (max-width: 1024px) {

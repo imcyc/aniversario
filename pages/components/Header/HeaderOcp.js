@@ -10,7 +10,7 @@ export default function HeaderOcp(){
         <Navbar expand="lg" className="header-ocp">
           <Navbar.Brand>
             <Link href="/">
-              <img src="/logo.svg" alt="" title="" style={{'width':'8em'}} />
+              <img src="/images/logo.svg" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{'width':'8em'}} />
             </Link>
           </Navbar.Brand>
           

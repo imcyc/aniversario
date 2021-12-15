@@ -26,11 +26,11 @@ export default function Layout({children}) {
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Oswald:wght@200;700&display=swap" rel="stylesheet" />
       </Head>
       
-      
-      {router.route == "/gerencia-tecnica" ? <HeaderGerencia/> : <Header />}
+      {router.route == "/" ? <Header/> : ''}
+      {router.route == "/gerencia-tecnica" ? <HeaderGerencia/> : ''}
       {router.route == "/gerencia-tecnica/[tipo]" && <HeaderGerencia/>}
       {router.route == "/cursos" && <HeaderGerencia/>}
-      {router.route == "/ocp" && <HeaderOcp/>}
+      {router.route == "/ocp" ? <HeaderOcp/> : ''}
 
       {/*<Aniversario />*/}
 
