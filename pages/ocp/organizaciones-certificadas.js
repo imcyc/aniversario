@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Layout from "../components/Layout";
 
-export default function organizacionesCertificadas() {
+export default function OrganizacionesCertificadas() {
   const [estado, setEstado] = useState('CERTIFICACIÓN INICIAL DE PRODUCTO')
 
   return (

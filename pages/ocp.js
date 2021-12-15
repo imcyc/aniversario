@@ -6,7 +6,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
-export default function ocp() {
+export default function Ocp() {
   const [estado, setEstado] = useState('CERTIFICACIÓN INICIAL DE PRODUCTO')
 
   const activo = (e)=>{

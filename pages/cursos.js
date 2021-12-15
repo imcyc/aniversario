@@ -31,7 +31,7 @@ const responsive = {
   }
 };
 
-export default function cursos({ reasons }) {
+export default function Cursos({ reasons }) {
   const [ entradas, setEntradas ] = useState();
   const { entries, isLoading } = UseEntries();
 
