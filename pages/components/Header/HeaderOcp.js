@@ -19,9 +19,9 @@ export default function HeaderOcp(){
             
             <Nav className="mr-auto">
               <Nav.Link href="/quienes-somos"></Nav.Link>
-              <Nav.Link href="/gerencia-tecnica/concreto">Alcance de acreditación</Nav.Link>
-              <Nav.Link href="/gerencia-tecnica/cemento">Proceso de Certificación</Nav.Link>
-              <Nav.Link href="/gerencia-tecnica/metrologia">Organizaciones Certificadas</Nav.Link>
+              <Nav.Link href="/ocp/alcance-de-acreditacion">Alcance de acreditación</Nav.Link>
+              <Nav.Link href="/ocp">Proceso de Certificación</Nav.Link>
+              <Nav.Link href="/ocp/organizaciones-certificadas">Organizaciones Certificadas</Nav.Link>
               <Nav.Link href="/gerencia-tecnica/asesorias-tecnicas">Consultar Certificado</Nav.Link>
             </Nav>
             

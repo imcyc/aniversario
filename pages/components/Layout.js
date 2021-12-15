@@ -31,6 +31,8 @@ export default function Layout({children}) {
       {router.route == "/gerencia-tecnica/[tipo]" && <HeaderGerencia/>}
       {router.route == "/cursos" && <HeaderGerencia/>}
       {router.route == "/ocp" ? <HeaderOcp/> : ''}
+      {router.route == "/ocp/alcance-de-acreditacion" ? <HeaderOcp/> : ''}
+      {router.route == "/ocp/organizaciones-certificadas" ? <HeaderOcp/> : ''}
 
       {/*<Aniversario />*/}
 

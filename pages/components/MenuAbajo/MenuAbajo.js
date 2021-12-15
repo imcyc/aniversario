@@ -60,6 +60,14 @@ export default function MenuAbajo() {
             </Link>
           </div>
           <div className="MenuItem">
+            <Link href="/ocp">
+              <a>
+                <PersonBoundingBox color={menucolor} />
+                <h2 style={{'color': menucolor}}>OCP</h2>
+              </a>
+            </Link>
+          </div>
+          <div className="MenuItem">
             <Link href="/directorio">
               <a>
                 <Calendar2Event color={menucolor} />
@@ -67,6 +75,7 @@ export default function MenuAbajo() {
               </a>
             </Link>
           </div>
+          {/* 
           <div className="MenuItem">
             <Link href="/certificaciones">
               <a>
@@ -75,14 +84,7 @@ export default function MenuAbajo() {
               </a>
             </Link>
           </div>
-          <div className="MenuItem">
-            <Link href="/ocp">
-              <a>
-                <PersonBoundingBox color={menucolor} />
-                <h2 style={{'color': menucolor}}>OCP</h2>
-              </a>
-            </Link>
-          </div>
+          */}
           <div className="MenuItem">
             <Link href="/tienda-imcyc">
               <a>
