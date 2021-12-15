@@ -26,8 +26,7 @@ export default function ocp() {
         >
           <Tab eventKey="CERTIFICACIÓN INICIAL DE PRODUCTO" title="CERTIFICACIÓN INICIAL DE PRODUCTO">
             <Container>
-              <h3><ArrowRightCircle/> CERTIFICACIÓN INICIAL DE PRODUCTO</h3>
-              <hr/>
+              <img src="/images/certificacion_inicial.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." className="img-fluid" />
             </Container>
           </Tab>
           <Tab eventKey="VISITA DE SEGUIMIENTO" title="VISITA DE SEGUIMIENTO">

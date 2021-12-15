@@ -487,7 +487,6 @@ h2.dirtit {
 
 .ocp-layout {
   background: #080e2e;
-  height: 100vh;
   padding: 70px 0;
 }
 
@@ -552,7 +551,7 @@ h2.dirtit {
 
 .ocp-layout .tab-content>.active {
   position: relative;
-  background: #fff;
+  padding: 0 50px;
 }
 
 @media (max-width: 1024px) {

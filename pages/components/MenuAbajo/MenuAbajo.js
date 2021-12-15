@@ -18,13 +18,19 @@ export default function MenuAbajo() {
   })
   
   let menucolor = "#fff";
+  let posicion = "fixed";
+  let back = "#fff";
   if(router.pathname === "/gerencia-tecnica/[tipo]" || router.pathname === "/cursos" || router.pathname === "/gerencia-tecnica"){
-    menucolor = "#333"
+    menucolor = "#016380"
   }
-  console.log(abajo);
+  if(router.pathname === "/ocp"){
+    posicion = "relative",
+    menucolor = "#fff",
+    back = "#080E2E"
+  }
   return (
     <>
-      <div className="menuabajo" style={{'display': abajo}}>
+      <div className="menuabajo" style={{'display': abajo, 'position': posicion, 'background': back}}>
         <div className="menuiconos">
         <div className="MenuItem">
             <Link href="/quienes-somos">
