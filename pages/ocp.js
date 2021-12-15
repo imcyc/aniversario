@@ -36,12 +36,12 @@ export default function ocp() {
           </Tab>
           <Tab eventKey="ALCANCES DE LA CERTIFICACIÓN" title="ALCANCES">
           <Container>
-              <img src="/images/certificacion_inicial.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." className="img-fluid" />
+              <img src="/images/alcances.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." className="img-fluid" />
             </Container>
           </Tab>
           <Tab eventKey="RENOVACIÓN DE LA CERTIFICACIÓN" title="RENOVACIÓN DE LA CERTIFICACIÓN">
           <Container>
-              <img src="/images/vigilancia.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." className="img-fluid" />
+              <img src="/images/renovacion.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." className="img-fluid" />
             </Container>
           </Tab>
         </Tabs>
