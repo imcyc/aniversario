@@ -29,22 +29,19 @@ export default function ocp() {
               <img src="/images/certificacion_inicial.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." className="img-fluid" />
             </Container>
           </Tab>
-          <Tab eventKey="VISITA DE SEGUIMIENTO" title="VISITA DE SEGUIMIENTO">
-            <Container>
-              <h3><ArrowRightCircle/> VISITA DE SEGUIMIENTO</h3>
-              <hr/>
+          <Tab eventKey="VISITA DE SEGUIMIENTO (VIGILANCIA)" title="VISITA DE SEGUIMIENTO">
+          <Container>
+              <img src="/images/vigilancia.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." className="img-fluid" />
             </Container>
           </Tab>
           <Tab eventKey="ALCANCES DE LA CERTIFICACIÓN" title="ALCANCES">
-            <Container>
-              <h3><ArrowRightCircle/> ALCANCES</h3>
-              <hr/>
+          <Container>
+              <img src="/images/certificacion_inicial.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." className="img-fluid" />
             </Container>
           </Tab>
           <Tab eventKey="RENOVACIÓN DE LA CERTIFICACIÓN" title="RENOVACIÓN DE LA CERTIFICACIÓN">
-            <Container>
-              <h3><ArrowRightCircle/> RENOVACIÓN DE LA CERTIFICACIÓN</h3>
-              <hr/>
+          <Container>
+              <img src="/images/vigilancia.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." className="img-fluid" />
             </Container>
           </Tab>
         </Tabs>
