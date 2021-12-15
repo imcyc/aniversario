@@ -530,6 +530,21 @@ h2.dirtit {
   border-radius: 0;
 }
 
+.aniversaio-badges {
+  position: fixed;
+  bottom: 0;
+  z-index: 10000;
+  width: 100%;
+  text-align: center;
+  right: 0;
+  display: fñe;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  right: 10px;
+  bottom: 20px;
+}
+
 @media (max-width: 1024px) {
   h3 {
     font-size: 1rem;

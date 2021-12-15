@@ -7,6 +7,7 @@ import HeaderOcp from './Header/HeaderOcp';
 import Footer from './Footer/Footer';
 import { motion } from "framer-motion";
 import MenuAbajo from './MenuAbajo/MenuAbajo';
+import Aniversario from './Header/Aniversario';
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: -100 },
@@ -30,6 +31,8 @@ export default function Layout({children}) {
       {router.route == "/gerencia-tecnica/[tipo]" && <HeaderGerencia/>}
       {router.route == "/cursos" && <HeaderGerencia/>}
       {router.route == "/ocp" && <HeaderOcp/>}
+
+      {/*<Aniversario />*/}
 
       <motion.main
         variants={variants} // Pass the variant object into Framer Motion 
