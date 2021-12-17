@@ -292,13 +292,11 @@ form.buscador input {
   padding: 10px;
   font-weight: 100;
 }
-
 .loader p {
   color: #fff;
   padding: 10px;
   font-weight: 100;
 }
-
 .tienda .card {
     flex-direction: row;
     margin-bottom: 10px;
