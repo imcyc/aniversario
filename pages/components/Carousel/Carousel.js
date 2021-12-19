@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import Carousel from 'react-bootstrap/Carousel';
+import { Row, Col } from 'react-bootstrap';
 
 export default function InicioCarousel(){
     return (
@@ -8,31 +10,27 @@ export default function InicioCarousel(){
         fade={true} 
         controls={false}
       >
-        <Carousel.Item interval={4000}>
-          <video id='background-video' autoPlay loop muted>
-            <source src='/videos/video5.mp4' type='/video/mp4' />
-            <source src='/videos/video5.mp4' type="video/ogg" /> 
-          </video>
+        <Carousel.Item interval={5000}>
           <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
-          <h2 className="videobanner">Gerencia Técnica</h2>
-          
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/bkg15.jpg"
+            src="https://images.adsttc.com/media/images/61b7/a610/f91c/81bf/ad00/0029/slideshow/Kengo_Kuma__Glass_Restaurant_in_Yamaguchi__Japan__%C2%A9_Erieta_Attali.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
         <Carousel.Item interval={4000}>
+          {/* 
           <video id='background-video' autoPlay loop muted>
             <source src='/videos/video8.mp4' type='/video/mp4' />
             <source src='/videos/video8.mp4' type="video/ogg" /> 
           </video>
+          */}
           <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
           <h2 className="videobanner">Cursos y Certificaciones</h2>
           
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/bkg16.jpg"
+            src="https://images.adsttc.com/media/images/61b7/a5ff/f91c/81bf/ad00/0028/slideshow/Max_Nunez__Private_House_in_the_Pacific_Ocean__Chile_%C2%A9Erieta_Attali.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
@@ -42,7 +40,7 @@ export default function InicioCarousel(){
           
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/bkg17.jpg"
+            src="https://images.adsttc.com/media/images/61b7/a5fa/f91c/81ad/ae00/0020/slideshow/Marc_MImram__Kehl_Bridge_in_Strasbourg__France__%C2%A9Erieta_Attali.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
@@ -52,7 +50,7 @@ export default function InicioCarousel(){
           
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/bkg18.jpg"
+            src="https://images.adsttc.com/media/images/61b7/a626/f91c/81ad/ae00/0022/slideshow/Barclay___Crousse__La_escondida_House__%C2%A9Erieta_Attali.jpg"
             alt="Third slide"
           />
         </Carousel.Item>

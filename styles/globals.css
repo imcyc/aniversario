@@ -249,7 +249,7 @@ form.buscador input {
 }
 
 .container.tienda {
-  margin-top: 90px;
+  margin-top: 60px;
   max-width: 98%;
   margin-bottom: 120px;
 }
@@ -292,18 +292,15 @@ form.buscador input {
   padding: 10px;
   font-weight: 100;
 }
-
 .loader p {
   color: #fff;
   padding: 10px;
   font-weight: 100;
 }
-
 .tienda .card {
     flex-direction: row;
     margin-bottom: 10px;
 }
-
 .tienda .card-title {
   margin-bottom: 0.1rem;
   font-size: 1rem;
@@ -487,8 +484,8 @@ h2.dirtit {
 
 .ocp-layout {
   background: #080e2e;
-  height: 100vh;
-  padding: 80px 0;
+  padding: 70px 0;
+  padding-bottom: 20px;
 }
 
 .ocp-layout h1 {
@@ -528,6 +525,31 @@ h2.dirtit {
 
 .ocp-layout .nav-tabs .nav-link {
   border-radius: 0;
+  color: #fff;
+}
+
+.ocp-layout .nav-tabs .nav-link.active {
+  color: #000;
+}
+
+.aniversaio-badges {
+  position: fixed;
+  bottom: 0;
+  z-index: 10000;
+  width: 100%;
+  text-align: center;
+  right: 0;
+  display: fñe;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  right: 10px;
+  bottom: 20px;
+}
+
+.ocp-layout .tab-content>.active {
+  position: relative;
+  padding: 0 50px;
 }
 
 @media (max-width: 1024px) {

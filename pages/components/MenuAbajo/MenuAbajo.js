@@ -18,13 +18,22 @@ export default function MenuAbajo() {
   })
   
   let menucolor = "#fff";
-  if(router.pathname === "/gerencia-tecnica/[tipo]" || router.pathname === "/cursos" || router.pathname === "/gerencia-tecnica"){
-    menucolor = "#333"
+  let posicion = "fixed";
+  let back = "#fff";
+  if(router.pathname === "/"){
+    back = "transparent"
   }
-  console.log(abajo);
+  if(router.pathname === "/gerencia-tecnica/[tipo]" || router.pathname === "/cursos" || router.pathname === "/gerencia-tecnica"){
+    menucolor = "#016380"
+  }
+  if(router.pathname === "/ocp"){
+    posicion = "relative",
+    menucolor = "#fff",
+    back = "#080E2E"
+  }
   return (
     <>
-      <div className="menuabajo" style={{'display': abajo}}>
+      <div className="menuabajo" style={{'display': abajo, 'position': posicion, 'background': back}}>
         <div className="menuiconos">
         <div className="MenuItem">
             <Link href="/quienes-somos">
@@ -51,6 +60,14 @@ export default function MenuAbajo() {
             </Link>
           </div>
           <div className="MenuItem">
+            <Link href="/ocp">
+              <a>
+                <PersonBoundingBox color={menucolor} />
+                <h2 style={{'color': menucolor}}>OCP</h2>
+              </a>
+            </Link>
+          </div>
+          <div className="MenuItem">
             <Link href="/directorio">
               <a>
                 <Calendar2Event color={menucolor} />
@@ -58,6 +75,7 @@ export default function MenuAbajo() {
               </a>
             </Link>
           </div>
+          {/* 
           <div className="MenuItem">
             <Link href="/certificaciones">
               <a>
@@ -66,14 +84,7 @@ export default function MenuAbajo() {
               </a>
             </Link>
           </div>
-          <div className="MenuItem">
-            <Link href="/ocp">
-              <a>
-                <PersonBoundingBox color={menucolor} />
-                <h2 style={{'color': menucolor}}>OCP</h2>
-              </a>
-            </Link>
-          </div>
+          */}
           <div className="MenuItem">
             <Link href="/tienda-imcyc">
               <a>

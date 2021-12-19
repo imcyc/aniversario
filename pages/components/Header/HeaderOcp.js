@@ -10,7 +10,7 @@ export default function HeaderOcp(){
         <Navbar expand="lg" className="header-ocp">
           <Navbar.Brand>
             <Link href="/">
-              <img src="/logo.svg" alt="" title="" style={{'width':'8em'}} />
+              <img src="/images/logo.svg" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{'width':'8em'}} />
             </Link>
           </Navbar.Brand>
           
@@ -19,9 +19,9 @@ export default function HeaderOcp(){
             
             <Nav className="mr-auto">
               <Nav.Link href="/quienes-somos"></Nav.Link>
-              <Nav.Link href="/gerencia-tecnica/concreto">Alcance de acreditación</Nav.Link>
-              <Nav.Link href="/gerencia-tecnica/cemento">Proceso de Certificación</Nav.Link>
-              <Nav.Link href="/gerencia-tecnica/metrologia">Organizaciones Certificadas</Nav.Link>
+              <Nav.Link href="/ocp/alcance-de-acreditacion">Alcance de acreditación</Nav.Link>
+              <Nav.Link href="/ocp">Proceso de Certificación</Nav.Link>
+              <Nav.Link href="/ocp/organizaciones-certificadas">Organizaciones Certificadas</Nav.Link>
               <Nav.Link href="/gerencia-tecnica/asesorias-tecnicas">Consultar Certificado</Nav.Link>
             </Nav>
             
