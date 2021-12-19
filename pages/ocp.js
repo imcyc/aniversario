@@ -24,7 +24,7 @@ export default function ocp() {
           <Tab eventKey="contact" title="ALCANCES">
             <h5>ALCANCES</h5>
           </Tab>
-          <Tab eventKey="contact" title="RENOVACIÓN DE LA CERTIFICACIÓN">
+          <Tab eventKey="renovacion" title="RENOVACIÓN DE LA CERTIFICACIÓN">
             <h5>RENOVACIÓN DE LA CERTIFICACIÓN</h5>
           </Tab>
         </Tabs>
