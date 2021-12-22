@@ -43,7 +43,9 @@ export default function Cursos({ reasons }) {
     return <Loader />;
   };
 
-  console.log(entradas);
+  if (!entradas) {
+    return <Loader />;
+  };
 
   return (
     <LayoutCursos>
