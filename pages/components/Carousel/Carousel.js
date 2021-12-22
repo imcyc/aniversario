@@ -12,6 +12,7 @@ export default function InicioCarousel(){
       >
         <Carousel.Item interval={5000}>
           <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
+          <h2 className="videobanner">Compartir el Conocimiento</h2>
           <img
             className="d-block w-100 min-vh-100"
             src="/images/bkg19.jpg"

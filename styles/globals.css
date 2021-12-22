@@ -406,7 +406,7 @@ form.buscador input {
 
 h2.videobanner {
   position:fixed;
-  font-weight:900;
+  font-weight:400;
   color:#fff;
   top:47%;
   font-size:3rem;
@@ -415,11 +415,12 @@ h2.videobanner {
   text-align:center;
   z-index: 200000;
   text-transform: uppercase;
+  text-shadow: 0px 0px 5px #000;
 }
 
 h3.videobanner {
   position:fixed;
-  font-weight:100;
+  font-weight:800;
   color:#fff;
   top:40%;
   font-size:2rem;
@@ -428,6 +429,7 @@ h3.videobanner {
   text-align:center;
   z-index: 200000;
   text-transform: uppercase;
+  text-shadow: 2px 2px 3px #000;
 }
 
 h3.videobanner.especial {
