@@ -19,8 +19,8 @@ export default function tiendaImcyc({ reasons }) {
     <LayoutCursos>
       <Container className="tienda">
         <Row>
-          <Col sm={3} className="filtros">
-            <Form>
+          <Col className="filtros">
+            <Form style={{'display':'flex'}}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Buscar por autor:</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
@@ -37,21 +37,16 @@ export default function tiendaImcyc({ reasons }) {
                 <Form.Label>Buscar por editorial:</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Buscar por precio:</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-              <Button variant="primary" type="submit" className="w-100">
-                FILTRAR
-              </Button>
             </Form>
           </Col>
+        </Row>
+        <Row>
           <Col>
             <Row>
               {reasons
                 .slice(0, reasons.length - 1)
                 .map(({ title, description, autor, precio, imagen }, i) => (
-                  <Col key={i} sm={6}>
+                  <Col key={i} sm={4}>
                     <CardProducto
                       titulo={title}
                       descripcion={description}

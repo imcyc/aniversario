@@ -26,7 +26,7 @@ export default function MenuAbajo() {
   if(router.pathname === "/gerencia-tecnica/[tipo]" || router.pathname === "/cursos" || router.pathname === "/gerencia-tecnica" || router.pathname === "/eventos-imcyc"){
     menucolor = "#016380"
   }
-  if(router.pathname === "/ocp"){
+  if(router.pathname === "/ocp" || router.pathname === "/tienda-imcyc"){
     posicion = "relative",
     menucolor = "#fff",
     back = "#080E2E"
@@ -97,7 +97,7 @@ export default function MenuAbajo() {
             <Link href="/tienda-imcyc">
               <a>
                 <Cart2 color={menucolor} />
-                <h2 style={{'color': menucolor}}>TIENDA</h2>
+                <h2 style={{'color': menucolor}}>TIENDA IMCYC</h2>
               </a>
             </Link>
           </div>

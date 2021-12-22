@@ -164,7 +164,7 @@ form.buscador input {
 
 .botonera h2 svg {
   margin-left: 5px;
-  
+
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -361,6 +361,7 @@ form.buscador input {
 .MenuItem h2 {
   font-size: 1rem;
   padding: 10px;
+  padding-bottom: 0;
 }
 
 .MenuItem a {
