@@ -23,7 +23,7 @@ export default function MenuAbajo() {
   if(router.pathname === "/" || router.pathname === "/quienes-somos"){
     back = "transparent"
   }
-  if(router.pathname === "/gerencia-tecnica/[tipo]" || router.pathname === "/cursos" || router.pathname === "/gerencia-tecnica"){
+  if(router.pathname === "/gerencia-tecnica/[tipo]" || router.pathname === "/cursos" || router.pathname === "/gerencia-tecnica" || router.pathname === "/eventos-imcyc"){
     menucolor = "#016380"
   }
   if(router.pathname === "/ocp"){
@@ -68,7 +68,7 @@ export default function MenuAbajo() {
             </Link>
           </div>
           <div className="MenuItem">
-            <Link href="/directorio">
+            <Link href="/eventos-imcyc">
               <a>
                 <Calendar2Event color={menucolor} />
                 <h2 style={{'color': menucolor}}>EVENTOS</h2>

@@ -22,7 +22,7 @@ const responsive = {
   }
 };
 
-export default function directorio(){
+export default function eventosImcyc(){
   return(
     <LayoutCursos>
       <div className="net">
