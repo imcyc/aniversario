@@ -89,7 +89,7 @@ export default function MenuAbajo() {
             <Link href="/tienda-imcyc">
               <a>
                 <Book color={menucolor} />
-                <h2 style={{'color': menucolor}}>BIBLIOTECA</h2>
+                <h2 style={{'color': menucolor}}>WEBINARS</h2>
               </a>
             </Link>
           </div>
