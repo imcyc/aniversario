@@ -436,6 +436,13 @@ h3.videobanner.especial {
   font-weight: bold;
 }
 
+.botonera {
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  z-index: 200000;
+}
+
 .net {
   display: block;
   margin: 90px 25px;
@@ -558,8 +565,8 @@ h2.dirtit {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0;
   z-index: 2;
+  height: 100vh;
 }
 
 @media (max-width: 1024px) {

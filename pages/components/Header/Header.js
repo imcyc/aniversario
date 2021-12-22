@@ -13,10 +13,10 @@ export default function Header(){
               <img src="/logo.svg" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{'width':'8em','marginRight':'15px'}} />
             </Link>
             <Link href="/aniversario-web">
-              <img src="/images/logo_aniversario_blanco.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{'width':'3em','marginRight':'15px'}} />
+              <img src="/images/logo_aniversario_blanco.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{'width':'2em','marginRight':'15px'}} />
             </Link>
             <Link href="/proveedor-ensayos-de-aptitud">
-              <img src="/images/logo15aniversario_blanco.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{'width':'3em','marginRight':'15px'}} />
+              <img src="/images/logo15aniversario_blanco.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{'width':'2em','marginRight':'15px'}} />
             </Link>
           </Navbar.Brand>
           

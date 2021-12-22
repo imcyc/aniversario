@@ -15,6 +15,14 @@ export default function InicioCarousel(){
           <div className='filtrocarousel'></div>
           <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
           <h2 className="videobanner">Compartir el Conocimiento</h2>
+          <div className='botonera'>
+            <Link href="">
+              <h2>Cursos</h2>
+            </Link>
+            <Link href="">
+              <h2>Laboratorio</h2>
+            </Link>
+          </div>
           <img
             className="d-block w-100 min-vh-100"
             src="/images/bkg19.jpg"
