@@ -154,8 +154,6 @@ form.buscador input {
 .tab-content>.active {
   /*background: rgba(0,0,0,0.8);*/
   padding: 80px 30px;
-  position: absolute;
-  top: 0;
 }
 
 :root {

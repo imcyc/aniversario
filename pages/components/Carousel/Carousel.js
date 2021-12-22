@@ -14,7 +14,7 @@ export default function InicioCarousel(){
           <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
           <img
             className="d-block w-100 min-vh-100"
-            src="https://images.adsttc.com/media/images/61b7/a610/f91c/81bf/ad00/0029/slideshow/Kengo_Kuma__Glass_Restaurant_in_Yamaguchi__Japan__%C2%A9_Erieta_Attali.jpg"
+            src="/images/bkg19.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
@@ -30,7 +30,7 @@ export default function InicioCarousel(){
           
           <img
             className="d-block w-100 min-vh-100"
-            src="https://images.adsttc.com/media/images/61b7/a5ff/f91c/81bf/ad00/0028/slideshow/Max_Nunez__Private_House_in_the_Pacific_Ocean__Chile_%C2%A9Erieta_Attali.jpg"
+            src="/images/bkg20.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
@@ -40,7 +40,7 @@ export default function InicioCarousel(){
           
           <img
             className="d-block w-100 min-vh-100"
-            src="https://images.adsttc.com/media/images/61b7/a5fa/f91c/81ad/ae00/0020/slideshow/Marc_MImram__Kehl_Bridge_in_Strasbourg__France__%C2%A9Erieta_Attali.jpg"
+            src="/images/bkg21.jpg"
             alt="Third slide"
           />
         </Carousel.Item>

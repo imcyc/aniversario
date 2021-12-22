@@ -20,7 +20,7 @@ export default function MenuAbajo() {
   let menucolor = "#fff";
   let posicion = "fixed";
   let back = "#fff";
-  if(router.pathname === "/"){
+  if(router.pathname === "/" || router.pathname === "/quienes-somos"){
     back = "transparent"
   }
   if(router.pathname === "/gerencia-tecnica/[tipo]" || router.pathname === "/cursos" || router.pathname === "/gerencia-tecnica"){

@@ -27,6 +27,7 @@ export default function Layout({children}) {
       </Head>
       
       {router.route == "/" ? <Header/> : ''}
+      {router.route == "/quienes-somos" ? <Header/> : ''}
       {router.route == "/gerencia-tecnica" ? <HeaderGerencia/> : ''}
       {router.route == "/gerencia-tecnica/[tipo]" && <HeaderGerencia/>}
       {router.route == "/cursos" && <HeaderGerencia/>}
