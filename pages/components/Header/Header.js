@@ -10,10 +10,13 @@ export default function Header(){
         <Navbar expand="lg">
           <Navbar.Brand>
             <Link href="/">
-              <img src="/logo-blanco.svg" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{'width':'8em'}} />
+              <img src="/logo-blanco.svg" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{'width':'8em','marginRight':'15px'}} />
             </Link>
             <Link href="/">
-              <img src="/logo15aniversario.svg" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{'width':'8em'}} />
+              <img src="/images/logo_aniversario.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{'width':'2.2em','marginRight':'15px'}} />
+            </Link>
+            <Link href="/">
+              <img src="/images/logo15aniversario.svg" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{'width':'2.2em','marginRight':'15px'}} />
             </Link>
           </Navbar.Brand>
           
