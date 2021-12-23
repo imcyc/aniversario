@@ -1,13 +1,11 @@
 import { useState, useEffect } from "react";
 import LayoutTienda from "./components/LayoutTienda";
-import Bkg from "./components/Bkg";
-import Form from 'react-bootstrap/Form';
 import CardProducto from "./components//CardProducto/CardProducto";
 import Loader from './components/Loader/Loader';
 import { getWhyNextReasons } from "../lib/api";
 import { UseEntries } from '../lib/swr-hooks';
 import { Container, Row, Col } from "react-bootstrap";
-import Button from 'react-bootstrap/Button';
+import { ArrowRightSquare } from "react-bootstrap-icons";
 
 export default function TiendaImcyc({ reasons }) {
   const { entries, isLoading } = UseEntries();
@@ -44,7 +42,7 @@ export default function TiendaImcyc({ reasons }) {
         */}
         <Row className="mt-3 pt-3">
           <Col>
-            {busca && <><hr/><h3>Resultados para: {busca}</h3><hr/></>}
+            {busca && <><hr/><h3 className="d-flex align-items-center"><ArrowRightSquare style={{'marginRight':'10px'}}/> Resultados para: {busca}</h3><hr/></>}
             <Row>
               {productos
                 .slice(0, reasons.length - 1)
