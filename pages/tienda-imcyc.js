@@ -11,6 +11,7 @@ import Button from 'react-bootstrap/Button';
 
 export default function TiendaImcyc({ reasons }) {
   const { entries, isLoading } = UseEntries();
+  const [ busca, setBusca ] = useState();
   const [ productos, setProductos ] = useState();
 
   useEffect(() => {
@@ -21,12 +22,14 @@ export default function TiendaImcyc({ reasons }) {
     return <Loader />;
   };
 
-  
+  if (!productos) {
+    return <Loader />;
+  };
 
-  console.log(productos);
+  console.log('Buscador'+busca);
 
   return (
-    <LayoutTienda>
+    <LayoutTienda buscador={setBusca}>
       <Container className="tienda">
         {/* 
         <Row>
@@ -41,8 +44,9 @@ export default function TiendaImcyc({ reasons }) {
         */}
         <Row className="mt-3 pt-3">
           <Col>
+            {busca && <><hr/><h3>Resultados para: {busca}</h3><hr/></>}
             <Row>
-              {reasons
+              {productos
                 .slice(0, reasons.length - 1)
                 .map(({ title, description, autor, precio, imagen }, i) => (
                   <Col key={i} sm={2}>

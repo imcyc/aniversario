@@ -7,10 +7,13 @@ import FormControl from 'react-bootstrap/FormControl';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { CartFill, PersonCircle } from "react-bootstrap-icons";
 
-export default function HeaderTienda() {
+export default function HeaderTienda({buscador}) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const functionHandler = (e) => {
+    buscador(e.target.value);
+  }
   return (
     <>
       <Navbar expand="lg">
@@ -40,7 +43,7 @@ export default function HeaderTienda() {
           </Nav>
           <div className='d-flex align-items-center carritoprod'>
             <Form className="buscador" inline="true">
-              <FormControl type="text" placeholder="BUSCAR PRODUCTO" className="mr-sm-2" />
+              <FormControl type="text" placeholder="BUSCAR PRODUCTO" className="mr-sm-2" onChange={(e) => functionHandler(e)} />
             </Form>
             <PersonCircle />
             <CartFill />

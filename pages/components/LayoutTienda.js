@@ -13,7 +13,7 @@ const variants = {
   exit: { opacity: 0, x: 100, y: 0 },
 }
 
-export default function LayoutTienda({children}) {
+export default function LayoutTienda({children, buscador}) {
   const router = useRouter();
   return (
     <div>
@@ -24,7 +24,7 @@ export default function LayoutTienda({children}) {
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Oswald:wght@200;700&display=swap" rel="stylesheet" />
       </Head>
 
-      <HeaderTienda />
+      <HeaderTienda buscador={buscador} />
 
       <motion.main
         variants={variants} // Pass the variant object into Framer Motion 
