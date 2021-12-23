@@ -10,6 +10,10 @@ export default function CardProducto({titulo, descripcion, autor, precio, imagen
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const pago = () => {
+
+  }
+
   return(
     <>
     <Card>
@@ -36,7 +40,7 @@ export default function CardProducto({titulo, descripcion, autor, precio, imagen
           <h4><NumberFormat value={precio} displayType={'text'} thousandSeparator={true} prefix={'$'} /></h4>
           <hr/>
           <div dangerouslySetInnerHTML={{ __html: descripcion }} />
-          <Button variant="primary" onClick={handleShow}>COMPRAR AHORA</Button>
+          <Button variant="primary" onClick={pago}>COMPRAR AHORA</Button>
         </Offcanvas.Body>
       </Offcanvas>
     </>
