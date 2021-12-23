@@ -1,10 +1,18 @@
+import { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 export default function CardProducto({titulo, descripcion, autor, precio, imagen}){
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return(
+    <>
     <Card>
-      <div className='imgproducto'>
+      <div className='imgproducto' onClick={handleShow}>
         <Card.Img variant="top" src={imagen} />
       </div>
       <Card.Body>
@@ -14,8 +22,19 @@ export default function CardProducto({titulo, descripcion, autor, precio, imagen
           {/*<div dangerouslySetInnerHTML={{ __html: descripcion }} />*/}
           <p className="autor">{autor}</p>
         </Card.Text>
-        <Button variant="primary">VER DETALLES</Button>
+        <Button variant="primary" onClick={handleShow}>VER DETALLES</Button>
       </Card.Body>
     </Card>
+
+    <Offcanvas show={show} onHide={handleClose} placement='end'>
+        <Offcanvas.Header closeButton></Offcanvas.Header>
+        <Offcanvas.Body className='detalleProdu'>
+          <img src={imagen} alt={titulo} title={titulo} className='img-fluid' />
+          <Offcanvas.Title className='mt-3'>{titulo}</Offcanvas.Title>
+          <h4 className='mt-3'>$ {precio}.00</h4>
+          <div dangerouslySetInnerHTML={{ __html: descripcion }} />
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
   )
 }
