@@ -25,10 +25,7 @@ export default function TiendaImcyc({ reasons }) {
   };
 
   const elbuscador = (termino) => {
-    console.log('elbuscador: ' + termino);
     setBusca(termino);
-    //setProductos(productos.filter(termino => termino == productos.title));
-    //console.log('produ: ' + productos.filter(termino => termino == productos.title).map(prod => setProductos(prod)));
     if (termino !== '') {
       const filteredData = productos.filter((item) => {
         return Object.values(item).join('').toLowerCase().includes(termino.toLowerCase())
@@ -38,7 +35,6 @@ export default function TiendaImcyc({ reasons }) {
     } else{
       setProductos(reasons);
     }
-    
   }
 
   return (
