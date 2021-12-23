@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import NumberFormat from 'react-number-format';
 
 export default function CardProducto({titulo, descripcion, autor, precio, imagen}){
   const [show, setShow] = useState(false);
@@ -18,7 +19,7 @@ export default function CardProducto({titulo, descripcion, autor, precio, imagen
       <Card.Body>
         <Card.Title>{titulo}</Card.Title>
         <Card.Text>
-          <h4>$ {precio}.00</h4>
+          <h4><NumberFormat value={precio} displayType={'text'} thousandSeparator={true} prefix={'$'} /></h4>
           {/*<div dangerouslySetInnerHTML={{ __html: descripcion }} />*/}
           <p className="autor">{autor}</p>
         </Card.Text>
@@ -31,8 +32,11 @@ export default function CardProducto({titulo, descripcion, autor, precio, imagen
         <Offcanvas.Body className='detalleProdu'>
           <img src={imagen} alt={titulo} title={titulo} className='img-fluid' />
           <Offcanvas.Title className='mt-3'>{titulo}</Offcanvas.Title>
-          <h4 className='mt-3'>$ {precio}.00</h4>
+          <hr/>
+          <h4><NumberFormat value={precio} displayType={'text'} thousandSeparator={true} prefix={'$'} /></h4>
+          <hr/>
           <div dangerouslySetInnerHTML={{ __html: descripcion }} />
+          <Button variant="primary" onClick={handleShow}>COMPRAR AHORA</Button>
         </Offcanvas.Body>
       </Offcanvas>
     </>

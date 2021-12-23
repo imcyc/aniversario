@@ -9,7 +9,7 @@ import { UseEntries } from '../lib/swr-hooks';
 import { Container, Row, Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 
-export default function tiendaImcyc({ reasons }) {
+export default function TiendaImcyc({ reasons }) {
   const { entries, isLoading } = UseEntries();
   const [ productos, setProductos ] = useState();
 

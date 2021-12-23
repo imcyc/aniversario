@@ -262,7 +262,7 @@ form.buscador input {
   margin: 0;
   border-radius: 0;
   border: 0;
-  box-shadow: 0 10px 10px #dedede;
+  box-shadow: 10px 10px 10px #dedede;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -622,6 +622,8 @@ h2.dirtit {
 
 .carritoprod form.buscador input {
   background: #f2f2f2;
+  border: none;
+  padding: 5px 20px;
 }
 
 .offcanvas {
@@ -639,6 +641,12 @@ h2.dirtit {
 .detalleProdu p {
   margin-top: 20px;
   text-align: justify;
+}
+
+.detalleProdu button.btn.btn-primary {
+  width: 100%;
+  background: #0072a6;
+  margin-top: 20px;
 }
 
 @media (max-width: 1024px) {
