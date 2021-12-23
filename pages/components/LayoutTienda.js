@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import Header from './Header/Header';
+import HeaderTienda from './Header/HeaderTienda';
 import Footer from './Footer/Footer';
 import { motion } from "framer-motion";
 import HeaderGerencia from './Header/HeaderGerencia';
@@ -24,8 +24,7 @@ export default function LayoutTienda({children}) {
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Oswald:wght@200;700&display=swap" rel="stylesheet" />
       </Head>
 
-      <Header />
-      {router.route == "/cursos" && <HeaderGerencia/>}
+      <HeaderTienda />
 
       <motion.main
         variants={variants} // Pass the variant object into Framer Motion 

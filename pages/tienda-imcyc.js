@@ -1,4 +1,5 @@
-import LayoutCursos from "./components/LayoutCursos";
+import { useState, useEffect } from "react";
+import LayoutTienda from "./components/LayoutTienda";
 import Bkg from "./components/Bkg";
 import Form from 'react-bootstrap/Form';
 import CardProducto from "./components//CardProducto/CardProducto";
@@ -7,46 +8,43 @@ import { getWhyNextReasons } from "../lib/api";
 import { UseEntries } from '../lib/swr-hooks';
 import { Container, Row, Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
+import {  } from "react";
 
 export default function tiendaImcyc({ reasons }) {
   const { entries, isLoading } = UseEntries();
+  const [ productos, setProductos ] = useState();
+
+  useEffect(() => {
+    setProductos(reasons);
+  });
 
   if (isLoading) {
     return <Loader />;
   };
 
+  
+
+  console.log(productos);
+
   return (
-    <LayoutCursos>
+    <LayoutTienda>
       <Container className="tienda">
         <Row>
           <Col className="filtros">
-            <Form style={{'display':'flex'}}>
+            <Form className="buscadorTienda">
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Buscar por autor:</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Buscar por título:</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Buscar por año:</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Buscar por editorial:</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Control type="email" placeholder="Buscar por autor" />
               </Form.Group>
             </Form>
           </Col>
         </Row>
-        <Row>
+        <Row className="mt-3">
           <Col>
             <Row>
               {reasons
                 .slice(0, reasons.length - 1)
                 .map(({ title, description, autor, precio, imagen }, i) => (
-                  <Col key={i} sm={4}>
+                  <Col key={i} sm={2}>
                     <CardProducto
                       titulo={title}
                       descripcion={description}
@@ -65,7 +63,7 @@ export default function tiendaImcyc({ reasons }) {
           </Col>
         </Row>
       </Container>
-    </LayoutCursos>
+    </LayoutTienda>
   )
 }
 
