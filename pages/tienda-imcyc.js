@@ -8,7 +8,6 @@ import { getWhyNextReasons } from "../lib/api";
 import { UseEntries } from '../lib/swr-hooks';
 import { Container, Row, Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
-import {  } from "react";
 
 export default function tiendaImcyc({ reasons }) {
   const { entries, isLoading } = UseEntries();
@@ -29,6 +28,7 @@ export default function tiendaImcyc({ reasons }) {
   return (
     <LayoutTienda>
       <Container className="tienda">
+        {/* 
         <Row>
           <Col className="filtros">
             <Form className="buscadorTienda">
@@ -38,7 +38,8 @@ export default function tiendaImcyc({ reasons }) {
             </Form>
           </Col>
         </Row>
-        <Row className="mt-3">
+        */}
+        <Row className="mt-3 pt-3">
           <Col>
             <Row>
               {reasons

@@ -14,7 +14,7 @@ export default function CardProducto({titulo, descripcion, autor, precio, imagen
           {/*<div dangerouslySetInnerHTML={{ __html: descripcion }} />*/}
           <p className="autor">{autor}</p>
         </Card.Text>
-        <Button variant="primary">COMPRAR AQUÍ</Button>
+        <Button variant="primary">VER DETALLES</Button>
       </Card.Body>
     </Card>
   )

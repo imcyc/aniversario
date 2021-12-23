@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav'
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { CartFill, PersonCircle } from "react-bootstrap-icons";
 
 export default function HeaderTienda() {
   const [show, setShow] = useState(false);
@@ -17,7 +18,7 @@ export default function HeaderTienda() {
           <Link href="/">
             <img src="/logo.svg" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{ 'width': '8em', 'marginRight': '15px' }} />
           </Link>
-          <img src="/images/logo_aniversario.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{ 'width': '2em', 'marginRight': '15px' }} onClick={handleShow} />
+          <img src="/images/logo_aniversario_blanco.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{ 'width': '2em', 'marginRight': '15px' }} onClick={handleShow} />
           <Link href="/proveedor-ensayos-de-aptitud">
             <img src="/images/logo15aniversario_blanco.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{ 'width': '2em', 'marginRight': '15px' }} />
           </Link>
@@ -37,6 +38,13 @@ export default function HeaderTienda() {
               <Nav.Link href="/ubicacion">Ubicación</Nav.Link>
               */}
           </Nav>
+          <div className='d-flex align-items-center carritoprod'>
+            <Form className="buscador" inline="true">
+              <FormControl type="text" placeholder="BUSCAR PRODUCTO" className="mr-sm-2" />
+            </Form>
+            <PersonCircle />
+            <CartFill />
+          </div>
         </Navbar.Collapse>
 
         <Offcanvas show={show} onHide={handleClose} placement='bottom'>

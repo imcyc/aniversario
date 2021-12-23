@@ -603,8 +603,24 @@ h2.dirtit {
 }
 
 .container.tienda .card .card-body {
-  height: 200px;
+  height: 230px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carritoprod svg {
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.carritoprod form.buscador {
+  margin-right: 10px;
+}
+
+.carritoprod form.buscador input {
+  background: #f2f2f2;
 }
 
 @media (max-width: 1024px) {
