@@ -14,7 +14,7 @@ export default function TiendaImcyc({ reasons }) {
 
   useEffect(() => {
     setProductos(reasons);
-  });
+  }, []);
 
   if (isLoading) {
     return <Loader />;
@@ -32,6 +32,7 @@ export default function TiendaImcyc({ reasons }) {
       });
       setProductos(filteredData);
       console.log('Filtrados: ' + JSON.stringify(filteredData));
+      console.log('Los productos: ' + productos.length);
     } else{
       setProductos(reasons);
     }
