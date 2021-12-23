@@ -24,10 +24,25 @@ export default function TiendaImcyc({ reasons }) {
     return <Loader />;
   };
 
-  console.log('Buscador'+busca);
+  const elbuscador = (termino) => {
+    console.log('elbuscador: ' + termino);
+    setBusca(termino);
+    //setProductos(productos.filter(termino => termino == productos.title));
+    //console.log('produ: ' + productos.filter(termino => termino == productos.title).map(prod => setProductos(prod)));
+    if (termino !== '') {
+      const filteredData = productos.filter((item) => {
+        return Object.values(item).join('').toLowerCase().includes(termino.toLowerCase())
+      });
+      setProductos(filteredData);
+      console.log('Filtrados: ' + JSON.stringify(filteredData));
+    } else{
+      setProductos(reasons);
+    }
+    
+  }
 
   return (
-    <LayoutTienda buscador={setBusca}>
+    <LayoutTienda buscador={(setBusca) => elbuscador(setBusca)}>
       <Container className="tienda">
         {/* 
         <Row>
@@ -44,9 +59,7 @@ export default function TiendaImcyc({ reasons }) {
           <Col>
             {busca && <><hr/><h3 className="d-flex align-items-center"><ArrowRightSquare style={{'marginRight':'10px'}}/> Resultados para: {busca}</h3><hr/></>}
             <Row>
-              {productos
-                .slice(0, reasons.length - 1)
-                .map(({ title, description, autor, precio, imagen }, i) => (
+              {productos.map(({ title, description, autor, precio, imagen }, i) => (
                   <Col key={i} sm={2}>
                     <CardProducto
                       titulo={title}
