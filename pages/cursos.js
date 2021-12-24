@@ -51,30 +51,7 @@ export default function Cursos({ reasons }) {
     <LayoutCursos>
       <Container className="tienda">
         <Row>
-          <Col sm={3} className="filtros">
-            <Form>
-              <hr/>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label><ArrowRightSquareFill /> Buscar por fecha:</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label><ArrowRightSquareFill /> Buscar por tema:</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label><ArrowRightSquareFill /> Buscar por profesor:</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label><ArrowRightSquareFill /> Buscar por precio:</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-              <Button variant="primary" type="submit" className="w-100">
-                FILTRAR
-              </Button>
-            </Form>
-          </Col>
+          
           <Col sm={9}>
           <hr/>
             <h3><ArrowRightCircleFill /> ENERO 2022</h3>
@@ -107,6 +84,30 @@ export default function Cursos({ reasons }) {
                   <div key={i} className="card net"><h3>{title}</h3></div>
                 ))}
             </Carousel>
+          </Col>
+          <Col sm={3} className="filtros">
+            <Form>
+              <hr/>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label><ArrowRightSquareFill /> Buscar por fecha:</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label><ArrowRightSquareFill /> Buscar por tema:</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label><ArrowRightSquareFill /> Buscar por profesor:</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label><ArrowRightSquareFill /> Buscar por precio:</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+              </Form.Group>
+              <Button variant="primary" type="submit" className="w-100">
+                FILTRAR
+              </Button>
+            </Form>
           </Col>
         </Row>
       </Container>
