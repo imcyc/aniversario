@@ -17,17 +17,16 @@ export default function Header() {
           <Link href="/">
             <img src="/logo.svg" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{ 'width': '8em', 'marginRight': '15px' }} />
           </Link>
-          <img src="/images/logo_aniversario_blanco.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{ 'width': '2em', 'marginRight': '15px' }} onClick={handleShow} />
+          <img src="/images/logo_aniversario_blanco.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{ 'width': '2.2em', 'marginRight': '5px' }} onClick={handleShow} />
           <Link href="/proveedor-ensayos-de-aptitud">
-            <img src="/images/logo15aniversario_blanco.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{ 'width': '2em', 'marginRight': '15px' }} />
+            <img src="/images/logo15aniversario_blanco.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." style={{ 'width': '2.2em', 'marginRight': '5px' }} />
           </Link>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/quienes-somos"></Nav.Link>
-            {/* 
+            <Nav.Link href="/quienes-somos">somos</Nav.Link>
               <Nav.Link href="/cursos">Cursos</Nav.Link>
               <Nav.Link href="/gerencia-imcyc">Gerencia Técnica</Nav.Link>
               <Nav.Link href="/historia">Historia</Nav.Link>
@@ -35,7 +34,6 @@ export default function Header() {
               <Nav.Link href="/directorio">Directorio</Nav.Link>
               <Nav.Link href="/tienda-imcyc">Tienda</Nav.Link>
               <Nav.Link href="/ubicacion">Ubicación</Nav.Link>
-              */}
           </Nav>
           <Form className="buscador" inline="true">
             <FormControl type="text" placeholder="BUSCAR" className="mr-sm-2" />

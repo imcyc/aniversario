@@ -40,8 +40,8 @@ export default function InicioCarousel(){
           <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
           <h2 className="videobanner">Cursos y Certificaciones</h2>
           <div className='botonera'>
-            <Link href="/">
-              <h2>Calendario</h2>
+            <Link href="/gerencia-tecnica">
+              <h2>Calendario de Actividades <ArrowRightCircleFill/></h2>
             </Link>
           </div>
           <img
@@ -55,11 +55,11 @@ export default function InicioCarousel(){
           <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
           <h2 className="videobanner">Eventos y Encuentros</h2>
           <div className='botonera'>
-            <Link href="/">
-              <h2>Cursos</h2>
+            <Link href="/cursos">
+              <h2>Cursos <ArrowRightCircleFill/></h2>
             </Link>
-            <Link href="/">
-              <h2>Laboratorio</h2>
+            <Link href="/gerencia-tecnica">
+              <h2>Laboratorio <ArrowRightCircleFill/></h2>
             </Link>
           </div>
           <img
@@ -73,11 +73,11 @@ export default function InicioCarousel(){
           <h3 className="videobanner">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
           <h2 className="videobanner">Certificación de productos</h2>
           <div className='botonera'>
-            <Link href="/">
-              <h2>Cursos</h2>
+            <Link href="/cursos">
+              <h2>Cursos <ArrowRightCircleFill/></h2>
             </Link>
-            <Link href="/">
-              <h2>Laboratorio</h2>
+            <Link href="/gerencia-tecnica">
+              <h2>Laboratorio <ArrowRightCircleFill/></h2>
             </Link>
           </div>
           <img
@@ -134,7 +134,7 @@ export default function InicioCarousel(){
             padding: 10px 20px;
             border-radius: 10px;
             margin: 10px;
-            width: 200px;
+            width: 250px;
             cursor: pointer;
             transition: all 1s;
             display: flex;

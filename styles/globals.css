@@ -48,12 +48,12 @@ code {
   font-size: 0.8rem;
   margin-right: 3px;
   transition: all 1s;
-  font-family: 'Titillium Web', sans-serif;
+  /*font-family: 'Titillium Web', sans-serif;*/
   font-weight: 100;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  background: #fff;
+  color:#ccc;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -129,7 +129,7 @@ form.buscador input {
   background: rgba(255,255,255,0.5);
   border-radius: 0;
   margin-top: 3px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: bold;
   color: #555;
   cursor: pointer;

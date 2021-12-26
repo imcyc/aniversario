@@ -34,6 +34,7 @@ export default function Footer(){
             text-align: center;
             background: #fff;
             padding-top:20px;
+            z-index:1000000000000;
           }
           .patrocinios {
             background: #fff;
