@@ -40,13 +40,19 @@ export default function Header() {
           </Form>
         </Navbar.Collapse>
 
-        <Offcanvas show={show} onHide={handleClose} placement='bottom'>
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-          </Offcanvas.Header>
+        <Offcanvas show={show} onHide={handleClose} placement='bottom' style={{
+              'background':'#011c2b',
+              'color':'#fff',
+              'textAlign':'justify'
+            }}>
           <Offcanvas.Body>
-            Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc.
+            <div className="d-flex align-items-center">
+              <img src="/images/logo_aniversario.png" alt="" title="" className="img-fluid" style={{
+                'width':'200px',
+                'marginRight':'50px'
+              }} />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus lacus sed odio luctus scelerisque. Nullam in sagittis turpis. Fusce eleifend, lacus eget luctus ultricies, lorem mi mattis ligula, sed auctor tellus urna id lorem. Nulla porta, dui et malesuada facilisis, diam velit volutpat quam, a venenatis ex elit ut sem. Proin vitae ante imperdiet nulla gravida aliquam eget sit amet neque. Sed posuere lectus sit amet nisl laoreet, eget cursus turpis eleifend. Duis quis blandit justo. Sed luctus dui ex, finibus commodo metus hendrerit eu. Etiam quam diam, commodo scelerisque consectetur sit amet, ultrices vel est. Proin mi nisi, dignissim eget dolor vitae, scelerisque eleifend lorem. Vestibulum dapibus pretium consequat.</p>
+            </div>
           </Offcanvas.Body>
         </Offcanvas>
 
