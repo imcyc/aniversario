@@ -97,6 +97,24 @@ export default function Tipo(){
                 }
             ],
             'acreditaciones': []
+        },
+        {
+            'categoria': 'sistemas de-calidad',
+            'personas': [
+                {
+                    'nombre': 'Ing. Diana Zamora Godinez',
+                    'puesto': 'Coordinadora de Programas de Ensayos de Aptitud',
+                    'mail': 'dzamora@mail.imcyc.com',
+                    'telefono': '(01 55) 5276 7200 ext. 124'
+                },
+                {
+                    'nombre': 'Ing. Alan Méndez Roldán',
+                    'puesto': 'Asistente de la Coordinación de Ensayos de Aptitud',
+                    'mail': 'amendez@mail.imcyc.com',
+                    'telefono': '(01 55) 5276 7200 ext. 143'
+                }
+            ],
+            'acreditaciones': []
         }
     ]
     const sectores = [
@@ -172,6 +190,36 @@ export default function Tipo(){
             'subcategoria': '',
             'descripcion': 'Nuestros clientes:',
             'lista': ['']
+        },
+        {
+            'categoria': 'sistemas de-calidad',
+            'subcategoria': 'Asesorías en sistemas de calidad',
+            'descripcion': 'Orientación para la elaboración e Implementación de Sistema de la Calidad con base en la norma NMX-EC-17025-IMNC-2006. Dirigida a laboratorios de ensayos del sector de la construcción interesados en ACREDITARSE ante la ema.<br/><br/>Orientación para la elaboración e Implementación de Sistema de la Calidad con base en la norma NMX-CC-9001-IMNC-2008. Dirigida a organizaciones del sector de la construcción; concreteras, cementeras, prefabricadoras, constructoras, supervisoras, proyectistas, etc., interesadas en CERTIFICARSE ante el ONNCCE.<br/><br/>Orientación para la elaboración e Implementación de Acciones Correctivas, para atender los hallazgos de una auditoría interna o una evaluación externa de la ema u ONNCCE.',
+            'lista': []
+        },
+        {
+            'categoria': 'sistemas de-calidad',
+            'subcategoria': 'Asesorías en trámites de acreditación',
+            'descripcion': 'Orientación para integrar los documentos requeridos en la solicitud de acreditación de la ema, cuando se requiera adecuación de los mismos, para asegurar el cumplimiento con el tramite requerido.',
+            'lista': []
+        },
+        {
+            'categoria': 'sistemas de-calidad',
+            'subcategoria': 'Auditorías internas de calidad',
+            'descripcion': 'Auditorías Internas para Sistema de la Calidad con base en la norma NMX-EC-17025-IMNC-2006 y/o para Sistema de la Calidad con base en la norma NMX-CC-9001-IMNC-2008. El servicio se enfoca en apoyar a los Laboratorios de ensayos u Organizaciones del sector de la construcción, que inician tramite de ACREDITACIÓN o CERTIFICACIÓN e inclusive en cumplimiento a su programa anual para mantener la efectividad de su Sistema de la Calidad.',
+            'lista': []
+        },
+        {
+            'categoria': 'sistemas de-calidad',
+            'subcategoria': 'Cursos',
+            'descripcion': '<h2>Registro STPS de Agente Capacitador Externo No. IMC590923CZ4-0013</h2><p>En el IMCYC contamos con una gama de temas para cubrir las necesidades de capacitación del personal de los Laboratorios de ensayos u Organizaciones del sector de la construcción que cuentan con un Sistema de la Calidad NMX-EC-17025-IMNC-2006 y/o NMX-CC-9001-IMNC-2008 o que están interesados en implementar el mismo, entre estos se incluyen:</p><h2>GESTIÓN Y METROLOGÍA</h2>',
+            'lista': []
+        },
+        {
+            'categoria': 'ensayos de-aptitud',
+            'subcategoria': 'Proveedor de ensayos de aptitud',
+            'descripcion': 'A partir del 2007 el IMCYC cuenta con el Reconocimiento ante la <b>Entidad Mexicana de Acreditación (ema)</b>, como Proveedor de Ensayos de Aptitud en la rama de la construcción; subrama de agregados, cemento y concreto, a partir de diciembre 2009 se obtuvo el reconocimiento en la subrama de geotecnia y en el 2013 nos acreditamos en la rama de metalmecánica.<br/><br/>Como Proveedor del Ensayos de Aptitud, organizamos eventos a nivel nacional, así como, en las distintas zonas de la Republica Mexicana, contribuimos para que los laboratorios acreditados o en proceso de acreditación, cumplan con los requerimientos correspondientes solicitados por la ema, así como para evidenciar su aseguramiento de la calidad de los resultados. Bajo este esquema contamos con el programa anual de eventos:',
+            'lista': []
         }
     ]
     return(
@@ -186,7 +234,7 @@ export default function Tipo(){
                                     <ul className="list-style-none">
                                         {tip.personas.map((lit, i) => (
                                             <li key={i}>
-                                                <h4><ArrowRightCircle/> {lit.nombre}</h4>
+                                                <h4>{lit.nombre}</h4>
                                                 <h6>{lit.puesto}</h6>
                                                 <p>{lit.mail}</p>
                                                 <p>{lit.telefono}</p>
@@ -201,7 +249,11 @@ export default function Tipo(){
                                 <div className="p-0 m-0 labitems" key={i}>
                                     <h2 style={{'textTransform':'uppercase'}}>{tip.subcategoria}</h2>
                                     <hr/>
-                                    <p className="text-justify">{tip.descripcion}</p>
+                                    <div
+                                    style={{'text-align':'justify','paddingRight':'30px'}}
+                                    dangerouslySetInnerHTML={{
+                                        __html: tip.descripcion
+                                    }}></div>
                                     <ul className="pruebas">
                                         {tip.lista.map((lit, i) => (
                                             <li key={i}>{lit}</li>

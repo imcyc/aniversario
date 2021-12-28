@@ -24,8 +24,8 @@ export default function HeaderGerencia(){
               <Nav.Link href="/gerencia-tecnica/metrologia">Metrología</Nav.Link>
               <Nav.Link href="/gerencia-tecnica/asesorias-tecnicas">Asesorías Técnicas</Nav.Link>
               <Nav.Link href="/gerencia-tecnica/sistemas-de-calidad">Sistemas de calidad</Nav.Link>
-              <Nav.Link href="/gerencia-tecnica/ensayos de aptitud">Ensayos de aptitud</Nav.Link>
-              <Nav.Link href="/gerencia-tecnica/ocp">OCP</Nav.Link>
+              <Nav.Link href="/gerencia-tecnica/ensayos-de-aptitud">Ensayos de aptitud</Nav.Link>
+              <Nav.Link href="/ocp">OCP</Nav.Link>
               
             </Nav>
             <Form className="buscador" inline="true">
