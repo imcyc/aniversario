@@ -224,7 +224,7 @@ export default function Tipo(){
     ]
     return(
         <Layout>
-            <Container fluid={true}>
+            <Container fluid={true} className="m-0 p-0" style={{'background':'url(/images/laboratorio.jpg) no-repeat center center','backgroundSize':'cover'}}>
                 <Col className="gerencia secciones">
                     <Row className="text-left">
                         <Col xs={4}>
@@ -250,7 +250,7 @@ export default function Tipo(){
                                     <h2 style={{'textTransform':'uppercase'}}>{tip.subcategoria}</h2>
                                     <hr/>
                                     <div
-                                    style={{'text-align':'justify','paddingRight':'30px'}}
+                                    style={{'text-align':'justify','paddingRight':'30px','color':'#fff','fontWeight':'bold','paddingBottom':'20px'}}
                                     dangerouslySetInnerHTML={{
                                         __html: tip.descripcion
                                     }}></div>

@@ -434,6 +434,11 @@ form.buscador input {
 
 .gerencia.secciones ul li, .gerencia.secciones h2 {
   text-align: left;
+  color: #fff;
+}
+
+.gerencia.secciones h2 {
+  font-weight: bold;
 }
 
 h2.videobanner {
@@ -666,6 +671,8 @@ h2.dirtit {
 
 .labteam ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .labitems ul.pruebas {
@@ -674,7 +681,7 @@ h2.dirtit {
 }
 
 .labteam ul li {
-  background: #f2f2f2;
+  background: rgba(0,0,0,0.9);
   margin: 2px 0;
   padding: 15px 10px;
   text-align: justify;
@@ -683,6 +690,7 @@ h2.dirtit {
 .labteam ul li h4 {
   font-weight: bold;
   font-size: 1rem;
+  color: #fff;
 }
 
 .labteam ul li h6 {
