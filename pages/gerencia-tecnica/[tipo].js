@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import { useRouter } from 'next/router';
 import {Container, Col, Row} from 'react-bootstrap';
-import { BoxArrowRight } from "react-bootstrap-icons";
+import { ArrowRightCircle } from "react-bootstrap-icons";
 
 export default function Tipo(){
     const router = useRouter();
@@ -10,6 +10,39 @@ export default function Tipo(){
     if(tipo){
         titulo = tipo.replace("-", " ");
     }
+    const informes = [
+        {
+            'categoria': 'concreto',
+            'personas': [
+                {
+                    'nombre': 'Ing. Mario Alberto Hernández Hernández',
+                    'puesto': 'Gerente Técnico',
+                    'mail': 'mhernandez@mail.imcyc.com',
+                    'telefono': '5276-7200 Ext.121'
+                },
+                {
+                    'nombre': 'Ing. Héctor Germán López Andraca',
+                    'puesto': 'Coordinador del Laboratorio de Concreto',
+                    'mail': 'hlopez@mail.imcyc.com',
+                    'telefono': '5276-7200 Ext.152'
+                }
+            ],
+            'acreditaciones': [
+                {
+                    'nombre': 'Entidad Mexicana de Acreditación, A.C. (EMA)',
+                    'acreditacion': 'No. C-053-039/11',
+                    'vigencia': 'Vigente a partir del: 2011-03-24',
+                    'norma': '(NMX-EC-17025-IMNC-2006)(CONSTRUCCIÓN)'
+                },
+                {
+                    'nombre': 'Entidad Mexicana de Acreditación, A.C. (EMA)',
+                    'acreditacion': 'No. MM-0227-020/10',
+                    'vigencia': 'Vigente a partir del: 2013-12-11',
+                    'norma': '(NMX-EC-17025-IMNC-2006)(METAL MECÁNICA)'
+                }
+            ]
+        }
+    ]
     const sectores = [
         {
             'categoria': 'concreto',
@@ -39,24 +72,40 @@ export default function Tipo(){
     ]
     return(
         <Layout>
-            <Container>
+            <Container fluid={true}>
                 <Col className="gerencia secciones">
-                    <Row>
-                        
-                    </Row>
                     <Row className="text-left">
-                        {sectores.filter(tipo => tipo.categoria === titulo).map((tip, i) => (
-                            <div className="p-0 m-0" key={i}>
-                                {/*<h4>{tip.categoria}</h4>*/}
-                                <h2 style={{'textTransform':'uppercase'}}>{tip.subcategoria}</h2>
-                                <p className="text-justify">{tip.descripcion}</p>
-                                <ul>
-                                    {tip.lista.map((lit, i) => (
-                                        <li key={i}>{lit}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
+                        <Col xs={4}>
+                            {informes.filter(tipo => tipo.categoria === titulo).map((tip, i) => (
+                                <div className="p-0 m-0 labteam" key={i}>
+                                    <h4 style={{'textTransform':'uppercase'}}>{tip.nombre}</h4>
+                                    <ul className="list-style-none">
+                                        {tip.personas.map((lit, i) => (
+                                            <li key={i}>
+                                                <h4><ArrowRightCircle/> {lit.nombre}</h4>
+                                                <h6>{lit.puesto}</h6>
+                                                <p>{lit.mail}</p>
+                                                <p>{lit.telefono}</p>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </Col>
+                        <Col>
+                            {sectores.filter(tipo => tipo.categoria === titulo).map((tip, i) => (
+                                <div className="p-0 m-0" key={i}>
+                                    {/*<h4>{tip.categoria}</h4>*/}
+                                    <h2 style={{'textTransform':'uppercase'}}><ArrowRightCircle/> {tip.subcategoria}</h2>
+                                    <p className="text-justify">{tip.descripcion}</p>
+                                    <ul>
+                                        {tip.lista.map((lit, i) => (
+                                            <li key={i}>{lit}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </Col>
                     </Row>
                 </Col>
             </Container>

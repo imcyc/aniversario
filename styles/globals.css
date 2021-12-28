@@ -664,6 +664,30 @@ h2.dirtit {
   margin-top: 20px;
 }
 
+.labteam ul {
+  list-style: none;
+}
+
+.labteam ul li {
+  background: #f2f2f2;
+  margin: 2px 0;
+  padding: 15px 10px;
+}
+
+.labteam ul li h4 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.labteam ul li h6 {
+  font-size: 0.8rem;
+}
+
+.labteam ul li p {
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width: 1024px) {
   h3 {
     font-size: 1rem;
