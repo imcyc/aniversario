@@ -392,7 +392,7 @@ form.buscador input {
 }
 
 .header-gerencia.navbar-light .navbar-nav .nav-link {
-  color: #fff !important;
+  color: #111 !important;
 }
 
 .gerencia {
@@ -430,11 +430,12 @@ form.buscador input {
 .gerencia.secciones p {
   text-align: left;
   font-weight: bold;
+  color: #fff;
 }
 
 .gerencia.secciones ul li, .gerencia.secciones h2 {
   text-align: left;
-  color: #fff;
+  color: #333;
 }
 
 .gerencia.secciones h2 {
@@ -695,11 +696,21 @@ h2.dirtit {
 
 .labteam ul li h6 {
   font-size: 0.8rem;
+  color: #fff;
 }
 
 .labteam ul li p {
   margin: 0;
   padding: 0;
+}
+
+h1.titulab {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 1px solid #999;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1024px) {
