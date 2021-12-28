@@ -28,7 +28,7 @@ export default function Header() {
           <Nav className="mr-auto">
             <Nav.Link href="/quienes-somos">somos</Nav.Link>
               <Nav.Link href="/cursos">Cursos</Nav.Link>
-              <Nav.Link href="/gerencia-imcyc">Gerencia Técnica</Nav.Link>
+              <Nav.Link href="/gerencia-tecnica">Gerencia Técnica</Nav.Link>
               <Nav.Link href="/historia">Historia</Nav.Link>
               <Nav.Link href="/membresias">Membresías</Nav.Link>
               <Nav.Link href="/directorio">Directorio</Nav.Link>
