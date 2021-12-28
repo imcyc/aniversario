@@ -422,6 +422,20 @@ form.buscador input {
   font-weight: 400;
 }
 
+.gerencia.secciones {
+  height: auto;
+  padding: 90px 0;
+}
+
+.gerencia.secciones p {
+  text-align: left;
+  font-weight: bold;
+}
+
+.gerencia.secciones ul li, .gerencia.secciones h2 {
+  text-align: left;
+}
+
 h2.videobanner {
   position:fixed;
   font-weight:400;
