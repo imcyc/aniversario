@@ -31,7 +31,6 @@ export default function HeaderTienda({buscador}) {
         <Navbar.Collapse id="basic-navbar-nav" className='header-tienda'>
           <Nav className="mr-auto">
             <Nav.Link href="/quienes-somos"></Nav.Link>
-            
               <Nav.Link href="/cursos">Cursos</Nav.Link>
               <Nav.Link href="/gerencia-tecnica">Gerencia Técnica</Nav.Link>
               <Nav.Link href="/historia">Historia</Nav.Link>
