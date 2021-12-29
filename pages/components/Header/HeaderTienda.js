@@ -38,7 +38,6 @@ export default function HeaderTienda({buscador}) {
               <Nav.Link href="/directorio">Directorio</Nav.Link>
               <Nav.Link href="/tienda-imcyc">Tienda</Nav.Link>
               <Nav.Link href="/ubicacion">Ubicación</Nav.Link>
-          
           </Nav>
           <div className='d-flex align-items-center carritoprod'>
             <Form className="buscador" inline="true">
