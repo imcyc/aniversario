@@ -713,6 +713,10 @@ h1.titulab {
   text-transform: uppercase;
 }
 
+.navbar-light .header-tienda .navbar-nav .nav-link {
+  color: #000;
+}
+
 @media (max-width: 1024px) {
   h3 {
     font-size: 1rem;
