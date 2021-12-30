@@ -55,7 +55,6 @@ export default function Header() {
             </div>
           </Offcanvas.Body>
         </Offcanvas>
-
       </Navbar>
       <style jsx>{`
           .navbar {
