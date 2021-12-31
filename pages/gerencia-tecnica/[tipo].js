@@ -287,7 +287,6 @@ export default function Tipo(){
                     </Row>
                 </Col>
             </Container>
-            
         </Layout>
     )
 }
