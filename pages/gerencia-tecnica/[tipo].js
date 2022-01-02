@@ -2,8 +2,6 @@ import { useState,useEffect } from "react";
 import Layout from "../components/Layout";
 import { useRouter } from 'next/router';
 import {Container, Col, Row} from 'react-bootstrap';
-import { ArrowRightCircle } from "react-bootstrap-icons";
-
 export default function Tipo(){
     const [fondo, setFondo] = useState('/images/laboratorio.jpg');
     const router = useRouter();
