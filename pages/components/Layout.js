@@ -37,6 +37,9 @@ export default function Layout({children}) {
 
       {/*<Aniversario />*/}
 
+      {children}
+      
+      {/* 
       <motion.main
         variants={variants} // Pass the variant object into Framer Motion 
         initial="hidden" // Set the initial state to variants.hidden
@@ -51,7 +54,7 @@ export default function Layout({children}) {
       >
         {children}
       </motion.main>
-
+      */}
       <MenuAbajo />
 
       <Footer />
