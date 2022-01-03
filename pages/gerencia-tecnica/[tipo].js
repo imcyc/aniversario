@@ -265,6 +265,7 @@ export default function Tipo(){
                         </Col>
                         <Col>
                             <h1 className="titulab">{titulo}</h1>
+                            <hr/>
                             {sectores.filter(tipo => tipo.categoria == titulo).map((tip, i) => (
                                 <div className="p-0 m-0 labitems" key={i}>
                                     <h2 style={{'textTransform':'uppercase'}}>{tip.subcategoria}</h2>
