@@ -8,6 +8,7 @@ import Footer from './Footer/Footer';
 import { motion } from "framer-motion";
 import MenuAbajo from './MenuAbajo/MenuAbajo';
 import Aniversario from './Header/Aniversario';
+import Programa from './Programa/Programa';
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: -100 },
@@ -37,8 +38,10 @@ export default function Layout({children}) {
 
       {/*<Aniversario />*/}
 
+      <Programa />
+
       {children}
-      
+
       {/* 
       <motion.main
         variants={variants} // Pass the variant object into Framer Motion 
