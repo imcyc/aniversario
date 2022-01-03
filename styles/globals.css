@@ -393,6 +393,7 @@ form.buscador input {
 
 .header-gerencia.navbar-light .navbar-nav .nav-link {
   color: #111 !important;
+  font-weight: bold;
 }
 
 .gerencia {
@@ -436,6 +437,10 @@ form.buscador input {
 .gerencia.secciones ul li, .gerencia.secciones h2 {
   text-align: left;
   color: #016380;
+}
+
+.gerencia.secciones .labteam ul li {
+  background: #016380;
 }
 
 .gerencia.secciones h2 {
