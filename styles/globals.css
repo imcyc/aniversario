@@ -603,7 +603,7 @@ h2.dirtit {
 }
 
 .filtrocarousel {
-  position: fixed;
+  position: absolute;
   background: rgba(0,0,0,0.7);
   left: 0;
   top: 0;
@@ -734,7 +734,7 @@ h1.titulab {
 
 @media (max-width: 1300px) {
   .navbar-light .navbar-nav .nav-link {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
   p {
     font-size: 0.8rem;

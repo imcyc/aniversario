@@ -31,6 +31,9 @@ export default function MenuAbajo() {
     menucolor = "#fff",
     back = "#080E2E"
   }
+  if(router.pathname === "/"){
+    posicion = "absolute"
+  }
   return (
     <>
       <div className="menuabajo" style={{'display': abajo, 'position': posicion, 'background': back}}>
@@ -105,7 +108,7 @@ export default function MenuAbajo() {
       </div>
       <style jsx>{`
           .menuabajo {
-            position: fixed;
+            position: absolute;
             botton: 0 !important;
           }
           .h2 {
