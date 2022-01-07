@@ -728,10 +728,8 @@ h1.titulab {
   }
   p {
     font-size: 0.9rem;
-  }
-  
+  } 
 }
-
 @media (max-width: 1300px) {
   .navbar-light .navbar-nav .nav-link {
     font-size: 0.5rem;
