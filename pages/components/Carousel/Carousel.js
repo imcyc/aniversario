@@ -24,7 +24,7 @@ export default function InicioCarousel(){
           </div>
           <img
             className="d-block w-100 min-vh-100"
-            src="/images/bkg19.jpg"
+            src="/images/bg_1.jpg"
             alt="Third slide"
             style={{'zIndex':'1'}}
           />
