@@ -116,7 +116,7 @@ export default function InicioCarousel(){
           }
 
           .botonera {
-            position: fixed;
+            position: absolute;
             top: 55%;
             width: 100%;
             z-index: 200000000000;
